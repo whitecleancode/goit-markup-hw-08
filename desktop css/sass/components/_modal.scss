@@ -8,7 +8,7 @@
     z-index         : 1;
     background-color: rgba(0, 0, 0, 0.2);
     opacity         : 1;
-    transition      : visibility 250ms var(--time-function), opacity 250ms var(--time-function);
+    transition      : visibility 250ms $cubic, opacity 250ms $cubic;
 }
 
 .backdrop.is-hidden {
@@ -27,7 +27,7 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius   : 4px;
-    background-color: var(--w-clor);
+    background-color: getcl('w');
 
     &__close {
         position: absolute;
@@ -46,12 +46,12 @@
     
         transition-property       : border;
         transition-duration       : 250ms;
-        transition-timing-function: var(--time-function);
+        transition-timing-function: $cubic;
     }
     
     &__close:hover .modal__icon,
     &__close:hover .modal__icon {
-        fill: var(--accent-clor);
+        fill: getcl('acnt');
     }
 }
 
@@ -70,7 +70,7 @@
         font-size    : 20px;
         line-height  : 1.15;
         text-align   : center;
-        color        : var(--title-clor);
+        color        : getcl('title');
     }
     
     &__label {
@@ -97,12 +97,12 @@
     
         transition-property       : fill;
         transition-duration       : 250ms;
-        transition-timing-function: var(--time-function);
+        transition-timing-function: $cubic;
     }
     
     &__block:focus &__icon,
     &__block:hover &__icon {
-        fill: var(--accent-clor);
+        fill: getcl('acnt');
     }
     
     &__input {
@@ -115,7 +115,7 @@
     
         transition-property       : border;
         transition-duration       : 250ms;
-        transition-timing-function: var(--time-function);
+        transition-timing-function: $cubic;
     }
     
     &__message {
@@ -131,14 +131,14 @@
     
         transition-property       : border;
         transition-duration       : 250ms;
-        transition-timing-function: var(--time-function);
+        transition-timing-function: $cubic;
     }
     
     &__input:focus,
     &__message:focus,
     &__input:hover,
     &__message:hover {
-        border-color: var(--accent-clor);
+        border-color: getcl('acnt');
     }
     
     &__message::placeholder {
@@ -168,14 +168,14 @@
     letter-spacing: 0.06em;
     box-shadow    : 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-    background-color: var(--accent-clor);
-    color           : var(--w-clor);
-    transition      : background 250ms var(--time-function);
+    background-color: getcl('acnt');
+    color           : getcl('w');
+    transition      : background 250ms $cubic;
 }
 
 &__button:hover,
 &__button:focus {
-    background-color: var(--accent-hover);
+    background-color: getcl('hvr');
 }
 }
 
@@ -187,7 +187,7 @@
     &__checkbox {
         width              : 16px;
         height             : 15px;
-        border             : 2px solid var(--title-clor);
+        border             : 2px solid getcl('title');
         border-radius      : 3px;
         background-repeat  : no-repeat;
         background-position: center;
@@ -204,14 +204,14 @@
 }
 
 &__link {
-    color: var(--accent-clor);
+    color: getcl('acnt');
 }
 }
 
 
 input[type='checkbox']:checked+.agreement__checkbox {
-    border-color    : var(--accent-clor);
-    background-color: var(--accent-clor);
+    border-color    : getcl('acnt');
+    background-color: getcl('acnt');
 }
 
 

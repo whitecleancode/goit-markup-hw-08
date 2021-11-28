@@ -1,7 +1,7 @@
 .hero {
     padding            : 200px 0;
     text-align         : center;
-    background-color   : var(--bg-clor2);
+    background-color   : getcl('bg_2');
     background-repeat  : no-repeat;
     background-position: 50% 50%;
     max-width          : 1600px;
@@ -16,7 +16,7 @@
             margin-right : auto;
             margin-bottom: 30px;
         
-            color         : var(--w-clor);
+            color         : getcl('w');
             font-family   : Roboto, sans-serif;
             font-weight   : 900;
             text-align    : center;
@@ -36,8 +36,8 @@
     align-items     : center;
     text-align      : center;
     cursor          : pointer;
-    background-color: var(--accent-clor);
-    color           : var(--w-clor);
+    background-color: getcl('acnt');
+    color           : getcl('w');
     font-size       : 16px;
     line-height     : 1.87;
     display         : flex;
