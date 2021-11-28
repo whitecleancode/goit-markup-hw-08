@@ -18,5 +18,5 @@ $f: ('small': font-size 14px, 'medium': font-size 16px, 'large': font-size 36px,
     @return map-get($f, $key);
 }
 
-$ls: letter-spacing 0.03em;
-$fx: display flex;
+$ls: 0.03em;
+$fx: flex;

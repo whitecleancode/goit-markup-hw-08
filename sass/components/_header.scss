@@ -1,0 +1,18 @@
+.header {
+    &__logo {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-size: 24px;
+        font-family: Raleway;
+        font-weight: 700;
+        letter-spacing: $ls;
+        line-height: 1.37;
+        color: getcl('acnt');
+        text-decoration: none;
+
+        
+    &--black {
+        color: getcl('b');
+    }
+    }
+}
