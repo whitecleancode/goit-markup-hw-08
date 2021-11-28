@@ -1,0 +1,22 @@
+$cLor: ('w': #fff, 'b': #000, 'gr': #afb1b8, 'title': #212121, 'txt': #757575, 'bg_1': #f5f4fa, 'bg_2': #2f303a,
+    'bg_3': rgba(0, 0, 0, 0.2), 'acnt': #2196f3, 'hvr': rgba(33, 150, 243, 0.9),
+);
+$cubic: var(--time-function);
+
+@function getcl($key) {
+    @return map-get($cLor, $key);
+}
+
+// w = white, b = black, gr = grey, title = close to black, text = grey, 3 bg 4 3 sections, acnt, hover = blue.
+
+$f: ('small': font-size 14px, 'medium': font-size 16px, 'large': font-size 36px, 'extraLarge': font-size 44,
+);
+// fonts would be like clothes sizing, from S to XL
+// 14, 16++, logo26, titles36, h144
+
+@function getf($key) {
+    @return map-get($f, $key);
+}
+
+$ls: letter-spacing 0.03em;
+$fx: display flex;
