@@ -28,6 +28,12 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -62,6 +68,20 @@ body {
 
 .header__logo--black {
   color: #000;
+}
+
+@media (max-width: 767px) {
+  .nav, .contacts {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav, .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .hero {
@@ -492,26 +512,19 @@ input[type='checkbox']:checked + .agreement__checkbox {
 
 .team__title {
   margin-top: 0px;
-  margin-bottom: 30px;
   font-size: 28px;
   line-height: 1.19;
   text-align: center;
 }
 
 .team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 0px;
 }
 
 .team__item {
-  margin-right: 30px;
+  margin-top: 30px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 6px 6px;
@@ -539,8 +552,12 @@ input[type='checkbox']:checked + .agreement__checkbox {
 
 .team__text {
   text-align: center;
-  background-color: #ffffff;
+  margin-top: 0;
   margin-bottom: 16px;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  background-color: #fff;
 }
 
 .social {
@@ -574,7 +591,7 @@ input[type='checkbox']:checked + .agreement__checkbox {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--w-clor);
+  background-color: #fff;
   -webkit-transition-property: background-color;
   transition-property: background-color;
   -webkit-transition-duration: 250ms;
@@ -584,16 +601,75 @@ input[type='checkbox']:checked + .agreement__checkbox {
 }
 
 .social__link:hover, .social__link:focus {
-  background-color: var(--accent-clor);
+  background-color: #2196f3;
 }
 
 .social__link:hover .social__icon,
 .social__link:focus .social__icon {
-  fill: var(--w-clor);
+  fill: #fff;
 }
 
 .social__icon {
-  fill: var(---grey);
+  fill: #afb1b8;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--time-function);
+          transition-timing-function: var(--time-function);
+}
+
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.clients__list {
+  display: block;
+}
+
+.clients__item {
+  margin-right: 30px;
+}
+
+.clients__item:last-child {
+  margin-right: 0;
+}
+
+.clients__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 210px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--time-function);
+          transition-timing-function: var(--time-function);
+}
+
+.clients__item:hover,
+.clients__item:focus {
+  border: 1px solid #2196f3;
+}
+
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
+  fill: #2196f3;
+}
+
+.clients__icon {
+  fill: var(--grey);
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;

@@ -15,4 +15,13 @@
         color: getcl('b');
     }
     }
+    
+}
+.nav, .contacts {
+    @media (max-width: 767px) {
+        display: none;
+    }
+    @include mq(tablet) {
+        display: flex;
+    }
 }

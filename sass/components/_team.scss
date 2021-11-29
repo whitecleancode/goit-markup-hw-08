@@ -5,7 +5,6 @@
 
     &__title {
         margin-top: 0px;
-        margin-bottom: 30px;
         font-size  : 28px;
         line-height: 1.19;
         text-align: center;
@@ -13,15 +12,13 @@
     }
 
     &__list {
-        display        : flex;
-        justify-content: center;
+        display        : block;
         margin-right   : auto;
         margin-left    : auto;
-        padding-left   : 0px;
     }
 
     &__item {
-        margin-right: 30px;
+        margin-top: 30px;
         box-shadow  : 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 6px 6px;
@@ -43,14 +40,18 @@
         font-size     : 16px;
         line-height   : 1.19;
         text-align    : center;
-        letter-spacing: 0.03em;
-        color         : #212121;
+        letter-spacing: $ls;
+        color         : getcl('title');
     }
 
     &__text {
-        text-align      : center;
-        background-color: #ffffff;
+        text-align: center;
+        margin-top: 0;
         margin-bottom   : 16px;
+        font-size: 16px;
+        letter-spacing: $ls;
+        color: getcl('txt');
+        background-color: getcl('w');
     }
 }
 
@@ -62,7 +63,6 @@
     &__linkbox {
         margin-right: 10px;
     }
-
     &__linkbox:last-child {
         margin-right: 0;
     }
@@ -74,27 +74,27 @@
         width           : 44px;
         height          : 44px;
         border-radius   : 50%;
-        background-color: var(--w-clor);
+        background-color: getcl('w');
 
         transition-property       : background-color;
         transition-duration       : 250ms;
-        transition-timing-function: var(--time-function);
+        transition-timing-function: $cubic;
     }
 
     &__link:hover,
     &__link:focus {
-        background-color: var(--accent-clor);
+        background-color: getcl('acnt');
     }
 
     &__link:hover .social__icon,
     &__link:focus .social__icon {
-        fill: var(--w-clor);
+        fill: getcl('w');
     }
 
     &__icon {
-        fill                      : var(---grey);
+        fill                      : getcl('gr');
         transition-property       : fill;
         transition-duration       : 250ms;
-        transition-timing-function: var(--time-function);
+        transition-timing-function: $cubic;
     }
 }
