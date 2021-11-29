@@ -1,4 +1,5 @@
 body {
+  font-family: $mainFont;
   font-size: getf('small');
   letter-spacing: $ls;
   color: getcl('txt')
@@ -55,25 +56,6 @@ input {
   }
 
 }
-
-
-.container__left {
-  display       : flex;
-  flex-direction: column;
-  margin-right  : 70px;
-}
-
-.container__mid {
-  display       : flex;
-  flex-direction: column;
-  margin-right  : 93px;
-}
-
-.container__right {
-  display       : flex;
-  flex-direction: column;
-}
-
 .text {
   font-size     : 14px;
   line-height   : 1.71;
