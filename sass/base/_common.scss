@@ -36,28 +36,17 @@ input {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-  .container {
-  margin-left  : auto;
-  margin-right : auto;
-  padding-left : 15px;
-  padding-right: 15px;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
+ @media screen and (min-width: 480px) {
+   .container {
+     margin-left  : auto;
+     margin-right : auto;
+     padding-left : 15px;
+     padding-right: 15px;
+     width: 480px;
+    }
   }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-
-}
-.text {
-  font-size     : 14px;
+    .text {
+  font-size     : getf('small');
   line-height   : 1.71;
   letter-spacing: $ls;
   color         : getcl('txt');
@@ -66,12 +55,12 @@ input {
 .title {
 
   line-height : 1.17;
-  text-align  : center;
-  letter-spacing: $ls;
-  font-weight : 700;
-  color : getcl('title');
   margin-top: 0px;
   margin-bottom: 30px;
+  text-align  : center;
+  letter-spacing: $ls;
+  font-weight : $b;
   font-size     : getf('large');
+  color : getcl('title');
   
 }
