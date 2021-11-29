@@ -19,9 +19,7 @@ $cLor: (
 );
 $cubic: var(--time-function);
 
-@function getcl($key) {
-  @return map-get($cLor, $key);
-}
+
 // w = white, b = black, gr = grey, title = close to black, text = grey, 3 bg 4 3 sections, acnt, hover = blue.
 
 $f: (
@@ -31,10 +29,9 @@ $f: (
 // fonts would be like clothes sizing, from S to XL
 // 14, 16++, logo26, titles36, h144
 
-@function getf($key) {
-  @return map-get($f, $key);
-}
 
-$ls: letter-spacing 0.03em;
-$fx: display flex;
 
+$ls: 0.03em;
+$fx: flex;
+$mainFont: Roboto;
+$logoFont: Raleway;

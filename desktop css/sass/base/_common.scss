@@ -65,15 +65,15 @@ input {
   font-size     : 14px;
   line-height   : 1.71;
   letter-spacing: 0.03em;
-  color         : getcl('txt');
+  color         : var(--txt-clor);
 }
 
 .title {
   margin-bottom : 50px;
-  color         : getcl('title');
+  color         : var(--title-clor);
   font-weight   : 700;
   font-size     : 36px;
   line-height   : 1.17;
   text-align    : center;
-  letter-spacing: $ls;
+  letter-spacing: 0.03em;
 }

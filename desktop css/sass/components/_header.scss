@@ -3,22 +3,22 @@
     background-color: getcl('w');
     border-bottom: 1px solid #ececec;
 
-    &__container {
-      display: flex;
-      align-items: center;
-    }
-    &__logo {
-      display: inline-block;
-      margin-right: 93px;
-      font-size: 26px;
-      font-family: Raleway, sans-serif;
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: 0.03em;
-      color: getcl('acnt');
-      text-decoration: none;
-    }
-    &__logo--black {
+  }
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
+  .header__logo {
+    display: inline-block;
+    margin-right: 93px;
+    font-size: 26px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: getcl('acnt');
+    text-decoration: none;
+    &--black {
       color: getcl('b')
     }
   }
@@ -27,44 +27,46 @@
   display     : flex;
   padding-left: 0px;
 
-  &__item {
-    position    : relative;
-    margin-right: 50px;
-  }
+}
+.nav__item {
+  position    : relative;
+  margin-right: 50px;
   
-  &__item:last-child {
+  &:last-child {
     margin-right: 0px;
   }
+}
+
+
+.nav__link {
+  position                  : relative;
+  padding-bottom            : 32px;
+  padding-top               : 32px;
+  text-decoration           : none;
+  font-weight               : 500;
+  font-size                 : 14px;
+  line-height               : 1.14;
+  letter-spacing            : 0.02em;
+  color                     : getcl('title');
+  transition-property       : color;
+  transition-duration       : 250ms;
+  transition-timing-function: $cubic;
   
-  &__link {
-    position                  : relative;
-    padding-bottom            : 32px;
-    padding-top               : 32px;
-    text-decoration           : none;
-    font-weight               : 500;
-    font-size                 : 14px;
-    line-height               : 1.14;
-    letter-spacing            : 0.02em;
-    color                     : getcl('title');
-    transition-property       : color;
-    transition-duration       : 250ms;
-    transition-timing-function: $cubic;
-  }
-  
-  &__link:hover,
-  &__link:focus {
+  &:hover,
+  &:focus {
     color: getcl('acnt');
   }
   
-  &__link:last-child {
+  &:last-child {
     margin-right: 0;
   }
+}
+
+
+.nav__link--current {
+  color: getcl('acnt');
   
-  &__link--current {
-    color: getcl('acnt');
-  }
-  
-  &__link--current::after {
+  &::after {
     content         : '';
     position        : absolute;
     bottom          : 0;
@@ -76,6 +78,7 @@
   }
 }
 
+
 /* contacts */
 
 .contacts {
@@ -84,51 +87,51 @@
   margin-left : auto;
   align-items : center;
 
-  &__mail,
-  &__tel {
-    display        : flex;
-    align-items    : center;
-    padding-top    : 32px;
-    padding-bottom : 32px;
-    margin-right   : 30px;
-    color          : getcl('txt');
-    font-weight    : 500;
-    font-style     : normal;
-    text-decoration: none;
-    font-size      : 14px;
-    line-height    : 1.14;
-    letter-spacing : 0.02em;
-  
-    transition-property       : color;
-    transition-duration       : 250ms;
-    transition-timing-function: $cubic;
-  }
-  
-  &__tel {
-    margin-right: 0;
-  }
-  
-  &__mail:hover,
-  &__tel:hover,
-  &__mail:focus,
-  &__tel:focus {
-    color: getcl('acnt');
-  }
-  
-  &__icon {
-    margin-right: 10px;
-    fill        : getcl('txt');
-  
-    transition-property       : fill;
-    transition-duration       : 250ms;
-    transition-timing-function: $cubic;
-  }
-  
-  &__mail:hover &__icon,
-  &__tel:hover &__icon,
-  &__mail:focus &__icon,
-  &__tel:focus &__icon {
-    fill: getcl('acnt');
-  }
+}
+.contacts__mail,
+.contacts__tel {
+  display        : flex;
+  align-items    : center;
+  padding-top    : 32px;
+  padding-bottom : 32px;
+  margin-right   : 30px;
+  color          : getcl('txt');
+  font-weight    : 500;
+  font-style     : normal;
+  text-decoration: none;
+  font-size      : 14px;
+  line-height    : 1.14;
+  letter-spacing : 0.02em;
+
+  transition-property       : color;
+  transition-duration       : 250ms;
+  transition-timing-function: $cubic;
+}
+
+.contacts__tel {
+  margin-right: 0;
+}
+
+.contacts__mail:hover,
+.contacts__tel:hover,
+.contacts__mail:focus,
+.contacts__tel:focus {
+  color: getcl('acnt');
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill        : getcl('txt');
+
+  transition-property       : fill;
+  transition-duration       : 250ms;
+  transition-timing-function: $cubic;
+}
+
+.contacts__mail:hover .contacts__icon,
+.contacts__tel:hover .contacts__icon,
+.contacts__mail:focus .contacts__icon,
+.contacts__tel:focus .contacts__icon {
+  fill: getcl('acnt');
 }
 
