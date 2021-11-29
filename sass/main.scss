@@ -1,12 +1,6 @@
-@import './utils/mixin';
-@import './utils/functions';
 @import './utils/variables';
+@import './utils/functions';
 @import './base/common';
+@import './utils/mixin';
 @import './components/header';
-@import './components/hero';
-@import './components/modal';
-@import './components/features';
-@import './components/samples';
-@import './components/team';
-@import './components/clients';
-@import './components/footer';
+

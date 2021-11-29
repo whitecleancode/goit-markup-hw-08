@@ -64,11 +64,14 @@ input {
 }
 
 .title {
-  margin-bottom : 50px;
-  color         : getcl('title');
-  font-weight   : 700;
-  font-size     : getf('large');
-  line-height   : 1.17;
-  text-align    : center;
+
+  line-height : 1.17;
+  text-align  : center;
   letter-spacing: $ls;
+  font-weight : 700;
+  color : getcl('title');
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size     : getf('large');
+  
 }
