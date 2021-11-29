@@ -2,7 +2,9 @@ $cLor: ('w': #fff, 'b': #000, 'gr': #afb1b8, 'title': #212121, 'txt': #757575, '
     'bg_3': rgba(0, 0, 0, 0.2), 'acnt': #2196f3, 'hvr': rgba(33, 150, 243, 0.9),
 );
 
-$f: ('small': 14px, 'medium': 16px, 'large': 36px, 'extraLarge': 44px);
+$f: ('small': 14px, 'medium': 16px, 'logo-tel': 24px 'large': 36px, 'extraLarge': 44px);
 $cubic: var(--time-function);
 $ls: 0.03em;
 $fx: flex;
+$mainFont: Roboto;
+$logoFont: Raleway;
