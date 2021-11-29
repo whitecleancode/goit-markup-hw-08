@@ -1,0 +1,92 @@
+body {
+  font-size: getf('small');
+  letter-spacing: $ls;
+  color: getcl('txt')
+}
+h1,
+button {
+  letter-spacing: 0.06em;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+input {
+  outline: transparent;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+  .container {
+  margin-left  : auto;
+  margin-right : auto;
+  padding-left : 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+
+}
+
+
+.container__left {
+  display       : flex;
+  flex-direction: column;
+  margin-right  : 70px;
+}
+
+.container__mid {
+  display       : flex;
+  flex-direction: column;
+  margin-right  : 93px;
+}
+
+.container__right {
+  display       : flex;
+  flex-direction: column;
+}
+
+.text {
+  font-size     : 14px;
+  line-height   : 1.71;
+  letter-spacing: $ls;
+  color         : getcl('txt');
+}
+
+.title {
+  margin-bottom : 50px;
+  color         : getcl('title');
+  font-weight   : 700;
+  font-size     : getf('large');
+  line-height   : 1.17;
+  text-align    : center;
+  letter-spacing: $ls;
+}

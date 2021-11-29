@@ -1,6 +1,7 @@
 @import './utils/mixin';
+@import './utils/functions';
 @import './utils/variables';
-@import './utils/common';
+@import './base/common';
 @import './components/header';
 @import './components/hero';
 @import './components/modal';

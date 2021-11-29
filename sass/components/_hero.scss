@@ -7,24 +7,24 @@
     margin-left        : auto;
     margin-right       : auto;
     background-image   : linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
-    &__container {
-        padding-top: 118px;
-        padding-bottom: 118px;
-    }
-    &__title {
-        padding-left: 60px;
-        padding-right: 60px;
-        padding-bottom: 30px;
-        margin        : 0px;
-        color         : getcl('w');
-        font-family   : Roboto, sans-serif;
-        font-weight   : 900;
-        text-align    : center;
-        font-size     : 26px;
-        line-height   : 1.61;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-    }
+}
+.hero__container {
+    padding-top: 118px;
+    padding-bottom: 118px;
+}
+.hero__title {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    margin        : 0px;
+    color         : getcl('w');
+    font-family   : Roboto, sans-serif;
+    font-weight   : 900;
+    text-align    : center;
+    font-size     : 26px;
+    line-height   : 1.61;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 .button {

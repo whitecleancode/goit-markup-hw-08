@@ -1,0 +1,6 @@
+@function getcl($key) {
+    @return map-get($cLor, $key);
+}
+@function getf($key) {
+    @return map-get($f, $key);
+}
