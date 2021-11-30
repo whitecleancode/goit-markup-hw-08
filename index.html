@@ -58,12 +58,53 @@
             >
           </li>
         </ul>
-        <button class="header__button" type="button" data-mobile-menu-open>
-          <svg class="header__button--icon" width="40" height="40">
-            <use href="./images/menu_40px.svg#dad"></use>
-            <use href="./images/icons.svg#mdwclose"></use>
+        <button
+          class="header__button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="переключатель мобильного окна">
+            <use class="header__button--burger" href="./images/icons.svg#burger"></use>
+            <use class="header__button--cross" href="./images/icons.svg#cross"></use>
           </svg>
         </button>
+      </div>
+      <div class="menu" data-menu>
+        <div class="thumb">
+          <ul class="thumb__list list">
+            <li class="thumb__item">
+              <a class="thumb__link thumb__link--current" href="./index.html">Студия</a>
+            </li>
+            <li class="thumb__item">
+              <a class="thumb__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="thumb__item--notm">
+              <a class="thumb__link" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="thumb">
+          <ul class="thumb__list list">
+            <li class="thumb__item">
+              <a class="thumb__link thumb__link--tel" href="tel:+38 096 111 11 11">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="thumb__item--notm">
+              <a class="thumb__link thumb__link--mail" href="mailto:info@devstudio.com" lang="en">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="thumb">
+          <a class="thumb__socials thumb__socials--border" href="">Instagram</a>
+          <a class="thumb__socials thumb__socials--border" href="">Twitter</a>
+          <a class="thumb__socials thumb__socials--border" href="">Facebook</a>
+          <a class="thumb__socials" href="">Linkedin</a>
+        </div>
       </div>
     </header>
     <main>
