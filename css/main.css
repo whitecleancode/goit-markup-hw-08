@@ -1370,9 +1370,6 @@ input[type='checkbox']:checked + .agreement__checkbox {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .company__logo--footer {
     margin-right: 0;
@@ -1409,19 +1406,18 @@ input[type='checkbox']:checked + .agreement__checkbox {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
-  .footer__type {
+  .footer__form {
     margin-top: 20px;
   }
   .footer__button {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
     margin-top: 20px;
   }
 }

@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
   .company__logo--footer {
     margin-right: 0;
@@ -37,16 +36,14 @@
   .container__right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex-wrap: wrap;
     margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
-  .footer__type {
+  .footer__form {
     margin-top: 20px;
   }
   .footer__button {
+    flex-direction: row-reverse;
     margin-top: 20px;
   }
 }
