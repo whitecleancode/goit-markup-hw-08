@@ -409,6 +409,11 @@ p {
 .footer__type {
   width: 450px;
   height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 }
 
 .footer__list-item {
@@ -435,14 +440,6 @@ p {
 
 .footer__icon {
   fill: #fff;
-}
-
-.footer__type {
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
 }
 
 .btnlist__button {
@@ -1022,8 +1019,6 @@ p {
     margin-bottom: 20px;
   }
   .footer__type {
-    width: 450px;
-    height: 50px;
     margin-bottom: 20px;
   }
 }
@@ -1402,23 +1397,25 @@ input[type='checkbox']:checked + .agreement__checkbox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin-top: 60px;
   }
-  .footer__form {
-    margin-top: 20px;
-  }
   .footer__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     margin-top: 20px;
+    margin-bottom: 60px;
   }
 }
 /*# sourceMappingURL=main.css.map */
