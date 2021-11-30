@@ -1349,7 +1349,7 @@ p {
 @media screen and (min-width: 768px) {
   .feature__container {
     padding: 60px 0;
-    margin: 0;
+    margin: 0 auto;
   }
   .feature__list {
     display: -webkit-box;
