@@ -584,4 +584,10 @@ input[type='checkbox']:checked + .agreement__checkbox {
   text-align: center;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 767px) {
+  .samples {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
