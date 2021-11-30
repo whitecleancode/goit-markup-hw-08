@@ -393,9 +393,22 @@ p {
   color: rgba(255, 255, 255, 0.4);
 }
 
+.address__place {
+  color: #fff;
+}
+
 .footer__title--small {
+  font-family: Roboto;
+  font-size: 14px;
   font-weight: 700;
   color: #fff;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer__type {
+  width: 450px;
+  height: 50px;
 }
 
 .footer__list-item {
@@ -1333,5 +1346,83 @@ p {
 input[type='checkbox']:checked + .agreement__checkbox {
   border-color: #2196f3;
   background-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .company__logo--footer {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .address__place,
+  .address__mail {
+    margin-bottom: 8px;
+  }
+  .footer__title--small {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -5px;
+  }
+  .footer__list-item {
+    margin: 5px;
+    -ms-flex-preferred-size: calc((100% - 8 * 5) / 4);
+        flex-basis: calc((100% - 8 * 5) / 4);
+  }
+  .container__left {
+    margin-left: 76px;
+    margin-right: 165px;
+  }
+  .container__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__type {
+    margin-top: 20px;
+  }
+  .footer__button {
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,52 @@
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    justify-content: baseline;
+    flex-wrap: wrap;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .company__logo--footer {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .address__place,
+  .address__mail {
+    margin-bottom: 8px;
+  }
+  .footer__title--small {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer__list {
+    display: flex;
+    margin: -5px;
+  }
+  .footer__list-item {
+    margin: 5px;
+    flex-basis: calc((100% - 8 * 5) / 4);
+  }
+  .container__left {
+    margin-left: 76px;
+    margin-right: 165px;
+  }
+  .container__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__type {
+    margin-top: 20px;
+  }
+  .footer__button {
+    margin-top: 20px;
+  }
+}

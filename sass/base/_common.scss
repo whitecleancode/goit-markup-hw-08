@@ -323,9 +323,21 @@ p {
     color: rgba($color: #fff, $alpha: 0.4);
   }
 }
+.address__place {
+  color: getcl('w');
+}
 .footer__title--small {
+  font-family: $mainFont;
+  font-size: getf('small');
   font-weight: $b;
   color: getcl('w');
+  letter-spacing: $ls;
+  text-transform: uppercase;
+}
+
+.footer__type {
+  width: 450px;
+  height: 50px;
 }
 
 .footer__list-item {
