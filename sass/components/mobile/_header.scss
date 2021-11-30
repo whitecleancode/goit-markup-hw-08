@@ -1,14 +1,12 @@
 @media screen and (max-width: 767px) {
-    
-.header__container {
+  .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 10px;
-
-}
-.header__button {
+  }
+  .header__button {
     z-index: 1;
     width: 40px;
     height: 40px;
@@ -19,79 +17,79 @@
     transition: color 250ms $cubic;
 
     &:hover {
-        fill: getcl('acnt');
+      fill: getcl('acnt');
     }
 
     & &--cross {
-        display: none;
+      display: none;
     }
     &.is-open &--cross {
-        display: block;
+      display: block;
     }
     &.is-open &--burger {
-        display: none;
+      display: none;
     }
-    }
-.menu {
-    display: none;
+  }
 
-    &.is-open {
-        position: absolute;
-        width: 100vw;
-        height: 800px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        box-shadow: $shadow;
-        padding-top: 48px;
-        padding-bottom: 48px;
-        background-color: getcl('w');
-
-    }
-}
-.thumb {
+  .thumb {
     margin-left: 40px;
     font-weight: 500;
-}
-.thumb__item {
+  }
+  .thumb__item {
     margin-bottom: 32px;
 
     &--notm {
-        margin-bottom: 0px;
+      margin-bottom: 0px;
     }
-}
+  }
 
-.thumb__link {
+  .thumb__link {
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: getcl('title');
-    
+
     &--current {
-        color: getcl('acnt');
+      color: getcl('acnt');
     }
     &--tel {
-        font-size: 34px;
-        color: getcl('acnt');
+      font-size: 34px;
+      color: getcl('acnt');
     }
     &--mail {
-        font-size: getf('logo-tel');
-        color: getcl('txt');
+      font-size: getf('logo-tel');
+      color: getcl('txt');
     }
-}
-.thumb__socials {
-
-padding: 0px 10px;
-font-family: $mainFont;
-font-size  : 18px;
-line-height: 1.22;
-letter-spacing: 0.02em;
-text-decoration: none;
-color: getcl('acnt');
+  }
+  .thumb__socials {
+    padding: 0px 10px;
+    font-family: $mainFont;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: getcl('acnt');
 
     &--border {
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
+  }
 }
+.menu {
+  display: none;
+
+  &.is-open {
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: $shadow;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: getcl('w');
+  }
 }

@@ -1,22 +1,19 @@
- @media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
+  .btnlist {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .btnlist__button {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
 
-.portfolio__container {
-padding: 60px 0px;
-margin: 0;
-}
-.btnlist {
-display: flex;
-flex-wrap: wrap;
-}    
-.btnlist__button {
-margin-right: 8px;
-margin-bottom: 15px;
-}
+  .works__item {
+    display: flex;
+    margin-bottom: 30px;
+  }
 
-.works__item {
-     display       : flex;
- flex-direction: column;
- justify-content: center;
-    width: 100%;
+  .works__text {
+    padding: 77px 24px;
+  }
 }
- }

@@ -3,7 +3,7 @@ body {
   font-family: $mainFont;
   font-size: getf('small');
   letter-spacing: $ls;
-  color: getcl('txt')
+  color: getcl('txt');
 }
 h1,
 button {
@@ -14,7 +14,6 @@ button {
   margin: 0;
   padding: 0;
   list-style: none;
-
 }
 img {
   display: block;
@@ -25,7 +24,10 @@ input {
   outline: transparent;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 .visually-hidden {
@@ -42,44 +44,47 @@ h1, h2, h3, p {
   overflow: hidden;
 }
 
- .container {
-   margin-left : auto;
-   margin-right: auto;
-   padding-left: 15px;
-   padding-right: 15px;
- @media screen and (min-width: 480px) {
-      width: 480px;
-    }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
   @media screen and (min-width: 768px) {
-      width: 768px;
+    width: 768px;
   }
   @media screen and (min-width: 1200px) {
-      width: 1200px;
+    width: 1200px;
   }
-  }
+}
 
-  .nav, .contacts {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-    @media screen and (min-width:768px) {
-      display: flex;
-      
-    }
+.nav,
+.contacts {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
-  .header__button {
-    @media screen and (min-width:768px) {
-      display: none;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
-
+}
+.header {
+  background-color: getcl('w');
+  border-bottom: 1px solid #ececec;
+}
+.header__button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
 
 .company__logo {
-  font-family    : $logoFont;
-  font-weight    : $b;
-  font-size      : getf('logo-tel');
-  line-height    : 1.17;
-  letter-spacing : $ls;
+  font-family: $logoFont;
+  font-weight: $b;
+  font-size: getf('logo-tel');
+  line-height: 1.17;
+  letter-spacing: $ls;
   text-decoration: none;
 
   color: getcl('acnt');
@@ -88,62 +93,62 @@ h1, h2, h3, p {
     color: getcl('b');
   }
   &--white {
-    color: getcl('w')
+    color: getcl('w');
   }
 }
 
 .text {
-  font-size     : getf('small');
-  line-height   : 1.71;
+  font-size: getf('small');
+  line-height: 1.71;
   letter-spacing: $ls;
-  color         : getcl('txt');
+  color: getcl('txt');
 }
 
 .title {
-  line-height : 1.17;
-  text-align  : center;
+  line-height: 1.17;
+  text-align: center;
   letter-spacing: $ls;
-  font-weight : $b;
-  font-size     : getf('large');
-  color : getcl('title');
+  font-weight: $b;
+  font-size: getf('large');
+  color: getcl('title');
 
-    &--small {
-      font-size: getf('small');
-      color: getcl('title');
-    }
-    &--medium {
-      font-size: getf('medium');
-      color: getcl('title');
-      margin-bottom: 10px;
-    }    
+  &--small {
+    font-size: getf('small');
+    color: getcl('title');
+  }
+  &--medium {
+    font-size: getf('medium');
+    color: getcl('title');
+    margin-bottom: 10px;
+  }
 }
 .hero {
-  background-color   : getcl('bg_2');
-  background-image   : linear-gradient(to right, $gradient, $gradient), url(../images/bg.jpg);
-  background-repeat  : no-repeat;
-  background-size    : cover;
+  background-color: getcl('bg_2');
+  background-image: linear-gradient(to right, $gradient, $gradient), url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: 50% 50%;
 }
 .hero__title {
-margin-top: 0px;
-font-weight: 900;
-text-align : center;
-letter-spacing: $ls2;
-text-transform: uppercase;
+  margin-top: 0px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: $ls2;
+  text-transform: uppercase;
 
-color: getcl('w');
+  color: getcl('w');
 }
 .button {
-  padding         : 10px 32px;
-  width           : 200px;
-  height          : 50px;
-  border-radius   : $radius;
-  box-shadow      : $shadowbtn;
-  border          : none;
-  font-weight     : $b;
-  line-height     : $btnLH;
-  letter-spacing  : $ls2;
-  color           : getcl('w');
+  padding: 10px 32px;
+  width: 200px;
+  height: 50px;
+  border-radius: $radius;
+  box-shadow: $shadowbtn;
+  border: none;
+  font-weight: $b;
+  line-height: $btnLH;
+  letter-spacing: $ls2;
+  color: getcl('w');
   background-color: getcl('acnt');
 }
 
@@ -160,9 +165,8 @@ color: getcl('w');
   background-color: getcl('bg_1');
 }
 .team__item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-              0px 1px 1px rgba(0, 0, 0, 0.14),
-              0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: getcl('w');
 }
@@ -176,7 +180,6 @@ color: getcl('w');
   margin-bottom: getf('medium');
   line-height: 1.17;
   letter-spacing: $ls;
-
 }
 .social {
   display: flex;
@@ -195,14 +198,14 @@ color: getcl('w');
   border: $border;
   border-radius: $radius;
   transition: border-color 250ms $cubic;
-    &:hover, 
-    &:focus {
-    border-color: getcl('acnt')
-    }
-    &:hover .clients__icon, 
-    &:focus .clients__icon {
+  &:hover,
+  &:focus {
+    border-color: getcl('acnt');
+  }
+  &:hover .clients__icon,
+  &:focus .clients__icon {
     fill: getcl('acnt');
-    }
+  }
 }
 .clients__icon {
   fill: getcl('gr');
@@ -224,10 +227,11 @@ color: getcl('w');
 .address {
   font-style: normal;
 
-    &__mail, &__tel {
-      text-decoration: none;
-      color: rgba($color: #fff, $alpha: 0.4);
-    }
+  &__mail,
+  &__tel {
+    text-decoration: none;
+    color: rgba($color: #fff, $alpha: 0.4);
+  }
 }
 .footer__title--small {
   font-weight: $b;
@@ -237,13 +241,14 @@ color: getcl('w');
 .footer__list-item {
   display: flex;
   justify-content: center;
-    width        : 44px;
-  height       : 44px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   align-items: center;
   background-color: rgba($color: #fff, $alpha: 0.1);
   transition: background-color 250ms $cubic;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: getcl('acnt');
   }
 }
@@ -251,19 +256,19 @@ color: getcl('w');
   fill: getcl('w');
 }
 .footer__type {
-background-color: transparent;
-border    : 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: $radius;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: $radius;
 }
 .btnlist__button {
   height: 38px;
   padding: 6px 22px;
   font-family: $mainFont;
   font-weight: 500;
-  font-size  : getf('medium');
+  font-size: getf('medium');
   line-height: 1.62;
-  text-align    : center;
+  text-align: center;
   letter-spacing: $ls;
   border: none;
   border-radius: $radius;
@@ -273,11 +278,69 @@ border-radius: $radius;
   transition-duration: 250ms;
   transition-timing-function: $cubic;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: getcl('w');
     background-color: getcl('acnt');
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-0px 1px 2px rgba(0, 0, 0, 0.08),
-0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
   }
+}
+.portfolio__container {
+  padding: 60px 0px;
+  margin: 0;
+}
+
+.works__link {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.works__thumb {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  z-index: 1;
+}
+.works__name {
+  margin-bottom: 4px;
+  font-weight: $b;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: $ls2;
+  color: getcl('title');
+}
+.works__box {
+  position: relative;
+  overflow: hidden;
+}
+
+.works__text {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-family: $mainFont;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: $ls;
+  color: getcl('w');
+  background-color: getcl('acnt');
+  transform: translateY(+100%);
+  transition: transform 250ms $cubic;
+
+  .works__link:hover &,
+  .works__link:focus & {
+    transform: translateY(0%);
+  }
+}
+.works__descr {
+  margin: 0;
+  font-size: getf('small');
+  line-height: 1.87;
+  color: getcl('txt');
 }
