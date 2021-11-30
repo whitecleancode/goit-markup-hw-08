@@ -47,7 +47,7 @@ h1, h2, h3, p {
    margin-right: auto;
    padding-left: 15px;
    padding-right: 15px;
- @media screen and (min-width: 480px) and (max-width: 767px) {
+ @media screen and (min-width: 480px) {
       width: 480px;
     }
   @media screen and (min-width: 768px) {
@@ -114,7 +114,14 @@ h1, h2, h3, p {
       font-size: getf('medium');
       color: getcl('title');
       margin-bottom: 10px;
-    }
+    }    
+}
+.hero {
+  background-color   : getcl('bg_2');
+  background-image   : linear-gradient(to right, $gradient, $gradient), url(../images/bg.jpg);
+  background-repeat  : no-repeat;
+  background-size    : cover;
+  background-position: 50% 50%;
 }
 .hero__title {
 margin-top: 0px;

@@ -1,0 +1,16 @@
+@media screen and (min-width: 480px) {
+.clients__container {
+    padding: 60px 0px;
+}
+.clients__title {
+    margin-bottom: 30px;
+}
+.clients__list {
+    margin: -15px;
+}
+.clients__item {
+    margin: 15px;
+    padding: 16px 52px;
+    width: calc((100% - 4 * 15) / 2) ;
+}
+}
