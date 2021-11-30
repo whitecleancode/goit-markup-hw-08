@@ -304,10 +304,12 @@ p {
 
 .social {
   display: flex;
+  margin : -10px;
 
   &__icon {
     fill: getcl('gr');
   }
+
 }
 
 .clients__list {
