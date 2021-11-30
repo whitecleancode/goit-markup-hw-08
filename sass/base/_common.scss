@@ -68,6 +68,24 @@ h1, h2, h3, p {
     }
   }
 
+.company__logo {
+  font-family    : $logoFont;
+  font-weight    : $b;
+  font-size      : getf('logo-tel');
+  line-height    : 1.17;
+  letter-spacing : $ls;
+  text-decoration: none;
+
+  color: getcl('acnt');
+
+  &--black {
+    color: getcl('b');
+  }
+  &--white {
+    color: getcl('w')
+  }
+}
+
 .text {
   font-size     : getf('small');
   line-height   : 1.71;
@@ -176,5 +194,15 @@ color: getcl('w');
 .clients__icon {
   fill: getcl('gr');
   transition: fill 250ms $cubic;
+}
+
+.footer {
+  background-color: getcl('bg_2');
+}
+
+.footer__container {
+  display: flex;
+  justify-content: baseline;
+  padding: 60px 0px;
 }
 

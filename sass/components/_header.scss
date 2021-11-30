@@ -6,19 +6,6 @@
     padding-bottom: 10px;
 
 }
-.header__logo {
-font-family    : $logoFont;
-font-weight   : $b;
-font-size     : getf('logo-tel');
-line-height   : 1.17;
-letter-spacing: $ls;
-text-decoration: none;
-
-color: getcl('acnt');
-    &--black {
-        color: getcl('b');
-    }
-}
 .header__button {
     z-index: 1;
     width: 40px;

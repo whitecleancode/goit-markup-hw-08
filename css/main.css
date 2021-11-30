@@ -84,6 +84,24 @@ h1, h2, h3, p {
   }
 }
 
+.company__logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #2196f3;
+}
+
+.company__logo--black {
+  color: #000;
+}
+
+.company__logo--white {
+  color: #fff;
+}
+
 .text {
   font-size: 14px;
   line-height: 1.71;
@@ -221,6 +239,20 @@ h1, h2, h3, p {
   transition: fill 250ms var(--time-function);
 }
 
+.footer {
+  background-color: #2f303a;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  padding: 60px 0px;
+}
+
 /* MEDIA QUERIES*/
 .header__container {
   display: -webkit-box;
@@ -234,20 +266,6 @@ h1, h2, h3, p {
           justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.header__logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: #2196f3;
-}
-
-.header__logo--black {
-  color: #000;
 }
 
 .header__button {
@@ -712,5 +730,12 @@ input[type='checkbox']:checked + .agreement__checkbox {
   margin: 15px;
   padding: 16px 52px;
   width: calc((100% - 4 * 15) / 2);
+}
+
+.footer__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */
