@@ -12,3 +12,11 @@
 .team__overlay {
     padding-bottom: 24px;
 }
+.social {
+    margin: -10px;
+     
+    &__linkbox {
+     margin    : 10px;
+     flex-basis: calc((100% - 4 * 20) / 4);
+    }
+}

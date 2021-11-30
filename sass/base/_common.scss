@@ -149,13 +149,32 @@ color: getcl('w');
 }
 .social {
   display: flex;
-  margin: -10px;
-    
-  &__linkbox {
-    margin: 10px;
-    flex-basis: calc((100% - 4 * 20) / 4);
-  }
+
   &__icon {
     fill: getcl('gr');
   }
 }
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clients__item {
+  height: 92px;
+  border: $border;
+  border-radius: $radius;
+  transition: border-color 250ms $cubic;
+    &:hover, 
+    &:focus {
+    border-color: getcl('acnt')
+    }
+    &:hover .clients__icon, 
+    &:focus .clients__icon {
+    fill: getcl('acnt');
+    }
+}
+.clients__icon {
+  fill: getcl('gr');
+  transition: fill 250ms $cubic;
+}
+
