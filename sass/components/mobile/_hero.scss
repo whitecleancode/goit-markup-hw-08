@@ -1,0 +1,15 @@
+@media screen and (max-width: 767px) {
+    
+.hero__container {
+padding: 118px 0px;
+}
+.hero__title {
+margin-top: 0;
+margin-bottom: 30px;
+font-size  : getf('title-tel-hero');
+line-height: 1.62;
+}
+.button {
+    margin: 0px 140px;
+}
+}

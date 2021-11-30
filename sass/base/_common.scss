@@ -68,7 +68,11 @@ p {
 }
 
 .team__container {
-  padding: 60px 0;
+  padding: 60px 0px;
+}
+
+.team__title {
+  margin-bottom: 30px;
 }
 
 .nav,
@@ -304,7 +308,6 @@ p {
 
 .social {
   display: flex;
-  margin : -10px;
 
   &__icon {
     fill: getcl('gr');
