@@ -89,13 +89,35 @@ input {
 
 .title {
   line-height: 1.17;
-  margin-top: 0px;
-  margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 36px;
   color: #212121;
+}
+
+.hero__title {
+  margin-top: 0px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.button {
+  padding: 10px 32px;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background-color: #2196f3;
 }
 
 /* MEDIA QUERIES*/
@@ -229,6 +251,30 @@ input {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+.hero {
+  background-color: #2f303a;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.hero__container {
+  padding: 118px 0px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 26px;
+  line-height: 1.62;
+}
+
+.button {
+  margin: 0px 140px;
+}
+
 .backdrop {
   width: 100vw;
   height: 100vh;
@@ -242,6 +288,7 @@ input {
   opacity: 1;
   -webkit-transition: visibility 250ms var(--time-function), opacity 250ms var(--time-function);
   transition: visibility 250ms var(--time-function), opacity 250ms var(--time-function);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {

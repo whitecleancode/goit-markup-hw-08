@@ -1,0 +1,20 @@
+.hero {
+    background-color: getcl('bg_2');
+    background-image: linear-gradient(to right, $gradient, $gradient), url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.hero__container {
+padding: 118px 0px;
+}
+.hero__title {
+margin-top: 0;
+margin-bottom: 30px;
+font-size  : getf('title-tel-hero');
+line-height: 1.62;
+}
+.button {
+    margin: 0px 140px;
+}

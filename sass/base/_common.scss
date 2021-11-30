@@ -70,13 +70,34 @@ input {
   letter-spacing: $ls;
   color         : getcl('txt');
 }
+
 .title {
   line-height : 1.17;
-  margin-top: 0px;
-  margin-bottom: 30px;
   text-align  : center;
   letter-spacing: $ls;
   font-weight : $b;
   font-size     : getf('large');
   color : getcl('title');
+}
+.hero__title {
+margin-top: 0px;
+font-weight: 900;
+text-align : center;
+letter-spacing: $ls2;
+text-transform: uppercase;
+
+color: getcl('w');
+}
+.button {
+  padding         : 10px 32px;
+  width           : 200px;
+  height          : 50px;
+  border-radius   : 4px;
+  box-shadow      : $shadowbtn;
+  border          : none;
+  font-weight     : $b;
+  line-height     : $btnLH;
+  letter-spacing  : $ls2;
+  color           : getcl('w');
+  background-color: getcl('acnt');
 }
