@@ -1,180 +1,190 @@
+@media screen and (min-width:1200px) {
 
-.footer {
-    padding-bottom  : 60px;
-    padding-top     : 60px;
-    color           : getcl('w');
-    background-color: getcl('bg_2');
-    
-}
-.footer__container {
-    display    : flex;
-    align-items: baseline;
-}
-.container__left {
-    display       : flex;
-    flex-direction: column;
-    margin-right  : 70px;
-}
 
-.container__mid {
-    display       : flex;
-    flex-direction: column;
-    margin-right  : 93px;
-}
+    .footer {
+        padding-bottom  : 60px;
+        padding-top     : 60px;
+        color           : getcl('w');
+        background-color: getcl('bg_2');
 
-.container__right {
-    display       : flex;
-    flex-direction: column;
-}
-
-.company__logo {
-    display        : inline-block;
-    font-family    : Raleway, sans-serif;
-    font-weight    : 700;
-    font-size      : 26px;
-    line-height    : 1.2;
-    letter-spacing : 0.03em;
-    color          : getcl('acnt');
-    text-decoration: none;
-    margin-bottom  : 20px;
-    color          : getcl('w');
-    &--black {
-        color: getcl('b');
     }
-}
 
-
-.footer__text {
-    margin-bottom : 20px;
-    font-weight   : 700;
-    font-size     : 14px;
-    line-height   : 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color         : #ffffff;
-}
-
-.footer__list {
-    display: flex;
-    padding: 0;
-}
-
-.footer__list-item {
-    justify-content: center;
-    align-items    : center;
-    margin-right   : 10px;
-
-    &:last-child {
-        margin-right: 0;
+    .footer__container {
+        display    : flex;
+        align-items: baseline;
     }
-}
 
-
-.footer__link {
-    display         : flex;
-    align-items     : center;
-    justify-content : center;
-    width           : 44px;
-    height          : 44px;
-    border-radius   : 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-
-    transition-property       : background-color;
-    transition-duration       : 250ms;
-    transition-timing-function: $cubic;
-    
-    &:hover,
-    &:focus {
-        background-color: getcl('acnt');
+    .container__left {
+        display       : flex;
+        flex-direction: column;
+        margin-right  : 70px;
     }
-    
-    &:hover .footer__icon,
-    &:focus .footer__icon {
-        fill: getcl('w');
+
+    .container__mid {
+        display       : flex;
+        flex-direction: column;
+        margin-right  : 93px;
     }
-}
-.footer__icon {
-    fill                      : getcl('w');
-    transition-property       : fill;
-    transition-duration       : 250ms;
-    transition-timing-function: $cubic;
-}
-.footer__form {
-    display    : flex;
-    align-items: center;
-}
 
-.footer__type {
-    cursor          : pointer;
-    width           : 358px;
-    height          : 50px;
-    margin-right    : 12px;
-    padding-left    : 16px;
-    border          : 1px solid rgba(255, 255, 255, 0.3);
-    filter          : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius   : 4px;
-    background-color: transparent;
-    color           : rgba(255, 255, 255, 0.6);
-    
-    &::placeholder {
-        padding-top   : 15px;
-        padding-bottom: 15px;
-        letter-spacing: 0.03em;
+    .container__right {
+        display       : flex;
+        flex-direction: column;
     }
-}
 
-
-.footer__button {
-    width : 200px;
-    height: 50px;
-
-    display         : flex;
-    flex-direction  : row-reverse;
-    align-items     : center;
-    padding         : 0;
-    margin          : 0;
-    cursor          : pointer;
-    font-size       : 16px;
-    line-height     : 1.87;
-    font-weight     : 700;
-    letter-spacing  : 0.06em;
-    text-align      : center;
-    color           : getcl('w');
-    background-color: getcl('acnt');
-    box-shadow      : 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius   : 4px;
-
-
-}
-     .button__icon {
-         margin-right: 28px;
-         margin-left : 10px;
-         
-         &:hover {
-              background-color: violet;
-          }
-     }
-
-
-.address {
-
-    &__place,
-    &__mail,
-    &__tel {
-        font-size      : 14px;
-        font-style     : normal;
-        line-height    : 1.71;
+    .company__logo {
+        display        : inline-block;
+        font-family    : Raleway, sans-serif;
+        font-weight    : 700;
+        font-size      : 26px;
+        line-height    : 1.2;
         letter-spacing : 0.03em;
+        color          : getcl('acnt');
         text-decoration: none;
-        padding        : 0px;
-        margin-bottom  : 9px;
-        color          : rgba(255, 255, 255, 0.6);
-    }
-    &__place {
-    color: getcl('w');
+        margin-bottom  : 20px;
+        color          : getcl('w');
+
+        &--black {
+            color: getcl('b');
+        }
     }
 
-    &__tel {
-    margin-bottom: 0;
+
+    .title-smallw {
+        margin-bottom : 20px;
+        font-weight   : 700;
+        font-size     : 14px;
+        line-height   : 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color         : #ffffff;
+    }
+
+    .footer__list {
+        display: flex;
+        padding: 0;
+    }
+
+    .footer__list-item {
+        justify-content: center;
+        align-items    : center;
+        margin-right   : 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+
+    .footer__link {
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        width           : 44px;
+        height          : 44px;
+        border-radius   : 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+
+        transition-property       : background-color;
+        transition-duration       : 250ms;
+        transition-timing-function: $cubic;
+
+        &:hover,
+        &:focus {
+            background-color: getcl('acnt');
+        }
+
+        &:hover .footer__icon,
+        &:focus .footer__icon {
+            fill: getcl('w');
+        }
+    }
+
+    .footer__icon {
+        fill                      : getcl('w');
+        transition-property       : fill;
+        transition-duration       : 250ms;
+        transition-timing-function: $cubic;
+    }
+
+    .footer__form {
+        display    : flex;
+        align-items: center;
+    }
+
+    .footer__type {
+        cursor          : pointer;
+        width           : 358px;
+        height          : 50px;
+        margin-right    : 12px;
+        padding-left    : 16px;
+        border          : 1px solid rgba(255, 255, 255, 0.3);
+        filter          : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius   : 4px;
+        background-color: transparent;
+        color           : rgba(255, 255, 255, 0.6);
+
+        &::placeholder {
+            padding-top   : 15px;
+            padding-bottom: 15px;
+            letter-spacing: 0.03em;
+        }
+    }
+
+
+    .footer__button {
+        width : 200px;
+        height: 50px;
+
+        display         : flex;
+        flex-direction  : row-reverse;
+        align-items     : center;
+        padding         : 0;
+        margin          : 0;
+        cursor          : pointer;
+        font-size       : 16px;
+        line-height     : 1.87;
+        font-weight     : 700;
+        letter-spacing  : 0.06em;
+        text-align      : center;
+        color           : getcl('w');
+        background-color: getcl('acnt');
+        box-shadow      : 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius   : 4px;
+
+
+    }
+
+    .button__icon {
+        margin-right: 28px;
+        margin-left : 10px;
+
+        &:hover {
+            background-color: violet;
+        }
+    }
+
+
+    .address {
+
+        &__place,
+        &__mail,
+        &__tel {
+            font-size      : 14px;
+            font-style     : normal;
+            line-height    : 1.71;
+            letter-spacing : 0.03em;
+            text-decoration: none;
+            padding        : 0px;
+            margin-bottom  : 9px;
+            color          : rgba(255, 255, 255, 0.6);
+        }
+
+        &__place {
+            color: getcl('w');
+        }
+
+        &__tel {
+            margin-bottom: 0;
+        }
     }
 }
