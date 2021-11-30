@@ -1,25 +1,28 @@
 body {
-  position: relative;
-  font-family: $mainFont;
-  font-size: getf('small');
+  position      : relative;
+  font-family   : $mainFont;
+  font-size     : getf('small');
   letter-spacing: $ls;
-  color: getcl('txt');
+  color         : getcl('txt');
 }
+
 h1,
 button {
   letter-spacing: 0.06em;
 }
 
 .list {
-  margin: 0;
-  padding: 0;
+  margin    : 0;
+  padding   : 0;
   list-style: none;
 }
+
 img {
-  display: block;
+  display  : block;
   max-width: 100%;
-  height: auto;
+  height   : auto;
 }
+
 input {
   outline: transparent;
 }
@@ -30,34 +33,42 @@ h3,
 p {
   margin: 0;
 }
+
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+  width   : 1px;
+  height  : 1px;
+  margin  : -1px;
+  border  : 0;
+  padding : 0;
 
   white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  clip-path  : inset(100%);
+  clip       : rect(0 0 0 0);
+  overflow   : hidden;
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
+  margin-left  : auto;
+  margin-right : auto;
+  padding-left : 15px;
   padding-right: 15px;
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }
+
   @media screen and (min-width: 768px) {
     width: 768px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
+}
+
+.team__container {
+  padding: 60px 0;
 }
 
 .nav,
@@ -65,30 +76,33 @@ p {
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
+
 .nav__item {
-  position: relative;
+  position    : relative;
   margin-right: 50px;
 
   &:last-child {
     margin-right: 0px;
   }
 }
+
 .nav__link {
-  position: relative;
-  padding-bottom: 32px;
-  padding-top: 32px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: getf('small');
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: getcl('title');
-  transition-property: color;
-  transition-duration: 250ms;
+  position                  : relative;
+  padding-bottom            : 32px;
+  padding-top               : 32px;
+  text-decoration           : none;
+  font-weight               : 500;
+  font-size                 : getf('small');
+  line-height               : 1.14;
+  letter-spacing            : 0.02em;
+  color                     : getcl('title');
+  transition-property       : color;
+  transition-duration       : 250ms;
   transition-timing-function: $cubic;
 
   &:hover,
@@ -100,25 +114,27 @@ p {
     margin-right: 0;
   }
 }
+
 .nav__link--current {
   color: getcl('acnt');
 
   &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
+    content         : '';
+    position        : absolute;
+    bottom          : 0;
+    display         : block;
+    width           : 100%;
+    height          : 4px;
+    border-radius   : 2px;
     background-color: getcl('acnt');
   }
 }
 
 .header {
   background-color: getcl('w');
-  border-bottom: 1px solid #ececec;
+  border-bottom   : 1px solid #ececec;
 }
+
 .header__button {
   @media screen and (min-width: 768px) {
     display: none;
@@ -126,11 +142,11 @@ p {
 }
 
 .company__logo {
-  font-family: $logoFont;
-  font-weight: $b;
-  font-size: getf('logo-tel');
-  line-height: 1.17;
-  letter-spacing: $ls;
+  font-family    : $logoFont;
+  font-weight    : $b;
+  font-size      : getf('logo-tel');
+  line-height    : 1.17;
+  letter-spacing : $ls;
   text-decoration: none;
 
   color: getcl('acnt');
@@ -138,6 +154,7 @@ p {
   &--black {
     color: getcl('b');
   }
+
   &--white {
     color: getcl('w');
   }
@@ -145,18 +162,18 @@ p {
 
 .contacts__mail,
 .contacts__tel {
-  display: flex;
-  align-items: center;
-  color: getcl('txt');
-  font-weight: 500;
-  font-style: normal;
+  display        : flex;
+  align-items    : center;
+  color          : getcl('txt');
+  font-weight    : 500;
+  font-style     : normal;
   text-decoration: none;
-  font-size: getf('small');
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  font-size      : getf('small');
+  line-height    : 1.14;
+  letter-spacing : 0.02em;
 
-  transition-property: color;
-  transition-duration: 250ms;
+  transition-property       : color;
+  transition-duration       : 250ms;
   transition-timing-function: $cubic;
 }
 
@@ -173,10 +190,10 @@ p {
 
 .contacts__icon {
   margin-right: 10px;
-  fill: getcl('txt');
+  fill        : getcl('txt');
 
-  transition-property: fill;
-  transition-duration: 250ms;
+  transition-property       : fill;
+  transition-duration       : 250ms;
   transition-timing-function: $cubic;
 }
 
@@ -188,89 +205,103 @@ p {
 }
 
 .text {
-  font-size: getf('small');
-  line-height: 1.71;
+  font-size     : getf('small');
+  line-height   : 1.71;
   letter-spacing: $ls;
-  color: getcl('txt');
+  color         : getcl('txt');
 }
 
 .title {
-  line-height: 1.17;
-  text-align: center;
+  line-height   : 1.17;
+  text-align    : center;
   letter-spacing: $ls;
-  font-weight: $b;
-  font-size: getf('large');
-  color: getcl('title');
+  font-weight   : $b;
+  font-size     : getf('large');
+  color         : getcl('title');
 
   &--small {
     font-size: getf('small');
-    color: getcl('title');
+    color    : getcl('title');
   }
+
+  &--smallw {
+    font-size: getf('small');
+    color    : getcl('w');
+  }
+
   &--medium {
-    font-size: getf('medium');
-    color: getcl('title');
+    font-size    : getf('medium');
+    color        : getcl('title');
     margin-bottom: 10px;
   }
 }
+
 .hero {
-  background-color: getcl('bg_2');
-  background-image: linear-gradient(to right, $gradient, $gradient), url(../images/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color   : getcl('bg_2');
+  background-image   : linear-gradient(to right, $gradient, $gradient), url(../images/bg.jpg);
+  background-repeat  : no-repeat;
+  background-size    : cover;
   background-position: 50% 50%;
 }
+
 .hero__title {
-  margin-top: 0px;
-  font-weight: 900;
-  text-align: center;
+  margin-top    : 0px;
+  font-weight   : 900;
+  text-align    : center;
   letter-spacing: $ls2;
   text-transform: uppercase;
 
   color: getcl('w');
 }
+
 .button {
-  padding: 10px 32px;
-  width: 200px;
-  height: 50px;
-  border-radius: $radius;
-  box-shadow: $shadowbtn;
-  border: none;
-  font-weight: $b;
-  line-height: $btnLH;
-  letter-spacing: $ls2;
-  color: getcl('w');
+  padding         : 10px 32px;
+  width           : 200px;
+  height          : 50px;
+  border-radius   : $radius;
+  box-shadow      : $shadowbtn;
+  border          : none;
+  font-weight     : $b;
+  line-height     : $btnLH;
+  letter-spacing  : $ls2;
+  color           : getcl('w');
   background-color: getcl('acnt');
 }
 
 .block {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  height: 120px;
-  padding: 25px 0px;
-  border-radius: $radius;
+  margin-bottom   : 30px;
+  display         : flex;
+  justify-content : center;
+  height          : 120px;
+  padding         : 25px 0px;
+  border-radius   : $radius;
   background-color: getcl('bg_1');
 }
+
 .team {
   background-color: getcl('bg_1');
 }
+
 .team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+  border-radius   : 0px 0px 4px 4px;
   background-color: getcl('w');
 }
+
 .team__overlay {
-  display: flex;
+  display       : flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 30px;
+  align-items   : center;
+  padding-top   : 30px;
 }
+
 .team__text {
-  margin-bottom: getf('medium');
-  line-height: 1.17;
+  margin-bottom : getf('medium');
+  line-height   : 1.17;
   letter-spacing: $ls;
 }
+
 .social {
   display: flex;
 
@@ -280,25 +311,29 @@ p {
 }
 
 .clients__list {
-  display: flex;
+  display  : flex;
   flex-wrap: wrap;
 }
+
 .clients__item {
-  height: 92px;
-  border: $border;
+  height       : 92px;
+  border       : $border;
   border-radius: $radius;
-  transition: border-color 250ms $cubic;
+  transition   : border-color 250ms $cubic;
+
   &:hover,
   &:focus {
     border-color: getcl('acnt');
   }
+
   &:hover .clients__icon,
   &:focus .clients__icon {
     fill: getcl('acnt');
   }
 }
+
 .clients__icon {
-  fill: getcl('gr');
+  fill      : getcl('gr');
   transition: fill 250ms $cubic;
 }
 
@@ -307,141 +342,157 @@ p {
 }
 
 .footer__container {
-  display: flex;
+  display        : flex;
   justify-content: baseline;
-  padding: 60px 0px;
+  padding        : 60px 0px;
 }
+
 .company__logo--footer {
   margin-bottom: 20px;
 }
+
 .address {
   font-style: normal;
 
   &__mail,
   &__tel {
     text-decoration: none;
-    color: rgba($color: #fff, $alpha: 0.4);
+    color          : rgba($color: #fff, $alpha: 0.4);
   }
 }
+
 .address__place {
   color: getcl('w');
 }
+
 .footer__title--small {
-  font-family: $mainFont;
-  font-size: getf('small');
-  font-weight: $b;
-  color: getcl('w');
+  font-family   : $mainFont;
+  font-size     : getf('small');
+  font-weight   : $b;
+  color         : getcl('w');
   letter-spacing: $ls;
   text-transform: uppercase;
 }
 
 .footer__type {
-  width: 450px;
-  height: 50px;
+  width           : 450px;
+  height          : 50px;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: $radius;
+  border          : 1px solid rgba(255, 255, 255, 0.3);
+  filter          : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius   : $radius;
 }
 
 .footer__list-item {
-  display: flex;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  align-items: center;
+  display         : flex;
+  justify-content : center;
+  width           : 44px;
+  height          : 44px;
+  border-radius   : 50%;
+  align-items     : center;
   background-color: rgba($color: #fff, $alpha: 0.1);
-  transition: background-color 250ms $cubic;
+  transition      : background-color 250ms $cubic;
+
   &:hover,
   &:focus {
     background-color: getcl('acnt');
   }
 }
+
 .footer__icon {
   fill: getcl('w');
 }
 
 .btnlist__button {
-  height: 38px;
-  padding: 6px 22px;
-  font-family: $mainFont;
-  font-weight: 500;
-  font-size: getf('medium');
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: $ls;
-  border: none;
-  border-radius: $radius;
-  color: getcl('title');
-  background-color: getcl('bg_1');
-  transition-property: background-color, box-shadow, color;
-  transition-duration: 250ms;
+  height                    : 38px;
+  padding                   : 6px 22px;
+  font-family               : $mainFont;
+  font-weight               : 500;
+  font-size                 : getf('medium');
+  line-height               : 1.62;
+  text-align                : center;
+  letter-spacing            : $ls;
+  border                    : none;
+  border-radius             : $radius;
+  color                     : getcl('title');
+  background-color          : getcl('bg_1');
+  transition-property       : background-color, box-shadow, color;
+  transition-duration       : 250ms;
   transition-timing-function: $cubic;
 
   &:hover,
   &:focus {
-    color: getcl('w');
+    color           : getcl('w');
     background-color: getcl('acnt');
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    box-shadow      : 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
+
 .portfolio__container {
   padding: 60px 0px;
-  margin: 0;
+  margin : 0;
 }
 
 .works__link {
   text-decoration: none;
+
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
+
 .works__thumb {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  padding   : 20px 24px;
+  border    : 1px solid #eeeeee;
   border-top: none;
-  z-index: 1;
+  z-index   : 1;
 }
+
 .works__name {
-  margin-bottom: 4px;
-  font-weight: $b;
-  font-size: 18px;
-  line-height: 2;
+  margin-bottom : 4px;
+  font-weight   : $b;
+  font-size     : 18px;
+  line-height   : 2;
   letter-spacing: $ls2;
-  color: getcl('title');
+  color         : getcl('title');
 }
+
 .works__box {
   position: relative;
   overflow: hidden;
 }
 
 .works__text {
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  font-family: $mainFont;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: $ls;
-  color: getcl;
+  position        : absolute;
+  bottom          : 0;
+  display         : block;
+  width           : 100%;
+  height          : 100%;
+  font-family     : $mainFont;
+  font-size       : 18px;
+  line-height     : 1.56;
+  letter-spacing  : $ls;
+  color           : getcl;
   background-color: getcl('acnt');
-  transform: translateY(+100%);
-  transition: transform 250ms $cubic;
+  transform       : translateY(+100%);
+  transition      : transform 250ms $cubic;
 
   .works__link:hover &,
   .works__link:focus & {
     transform: translateY(0%);
   }
 }
+
 .works__descr {
-  margin: 0;
-  font-size: getf('small');
+  margin     : 0;
+  font-size  : getf('small');
   line-height: 1.87;
-  color: getcl('txt');
+  color      : getcl('txt');
+}
+
+.button__icon {
+  margin-left: 10px;
 }

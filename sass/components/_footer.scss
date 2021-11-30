@@ -17,10 +17,12 @@
   .address__mail {
     margin-bottom: 8px;
   }
-  .footer__title--small {
+  .footer__title--smallw {
+    color: getcl('w');
     text-align: center;
     margin-bottom: 20px;
   }
+
   .footer__list {
     display: flex;
     margin: -5px;
@@ -43,6 +45,7 @@
   .footer__button {
     display: flex;
     flex-direction: row-reverse;
+
     margin-top: 20px;
     margin-bottom: 60px;
   }
