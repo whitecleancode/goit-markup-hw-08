@@ -28,10 +28,10 @@
         <nav>
           <ul class="nav list">
             <li class="nav__item">
-              <a class="nav__link" href="./index.html">Студия</a>
+              <a class="nav__link nav__link--current" href="./index.html">Студия</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
+              <a class="nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="./contacts.html">Контакты</a>
@@ -56,16 +56,63 @@
             >
           </li>
         </ul>
+        <button
+          class="header__button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="переключатель мобильного окна">
+            <use class="header__button--burger" href="./images/icons.svg#burger"></use>
+            <use class="header__button--cross" href="./images/icons.svg#cross"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu" data-menu>
+        <div class="thumb">
+          <ul class="thumb__list list">
+            <li class="thumb__item">
+              <a class="thumb__link thumb__link--current" href="./index.html">Студия</a>
+            </li>
+            <li class="thumb__item">
+              <a class="thumb__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="thumb__item--notm">
+              <a class="thumb__link" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="thumb">
+          <ul class="thumb__list list">
+            <li class="thumb__item">
+              <a class="thumb__link thumb__link--tel" href="tel:+38 096 111 11 11">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="thumb__item--notm">
+              <a class="thumb__link thumb__link--mail" href="mailto:info@devstudio.com" lang="en">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="thumb">
+          <a class="thumb__socials thumb__socials--border" href="">Instagram</a>
+          <a class="thumb__socials thumb__socials--border" href="">Twitter</a>
+          <a class="thumb__socials thumb__socials--border" href="">Facebook</a>
+          <a class="thumb__socials" href="">Linkedin</a>
+        </div>
       </div>
     </header>
 
     <!-- Мэйн -->
     <main>
     <section class="portfolio">
-      <div class="container">
+      <div class="container portfolio__container">
         <h1 class="visually-hidden">web-studio portfolio</h1>
 
-        <ul class="btnlist portfolio__btnlist list">
+        <ul class="container btnlist portfolio__btnlist list">
           <li class="btnlist__item">
             <button class="btnlist__button" type="button">Все</button>
           </li>
@@ -83,7 +130,7 @@
           </li>
         </ul>
 
-        <ul class="works list">
+        <ul class="works container list">
           
           <li class="works__item">
 
@@ -295,5 +342,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
