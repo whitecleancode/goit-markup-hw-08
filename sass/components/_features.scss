@@ -1,0 +1,26 @@
+@media screen and (min-width: 768px) {
+  .feature__container {
+    padding: 60px 0;
+    margin: 0;
+  }
+  .feature__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .feature__item {
+    width: 354px;
+    margin: 15px;
+    flex-basis: calc((100% - 4 * 15) / 2);
+  }
+  .title--small {
+    font-weight: $b;
+    font-size: getf('small');
+    line-height: 1.17;
+    letter-spacing: $ls;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    color: getcl('title');
+  }
+}

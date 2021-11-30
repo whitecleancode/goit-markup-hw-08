@@ -1074,6 +1074,20 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .hero__container {
+    padding: 118px 204px;
+  }
+  .hero__title {
+    width: 360px;
+    margin-bottom: 30px;
+  }
+  .button {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+}
+
 .backdrop {
   width: 100vw;
   height: 100vh;
@@ -1341,6 +1355,36 @@ p {
 input[type='checkbox']:checked + .agreement__checkbox {
   border-color: #2196f3;
   background-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .feature__container {
+    padding: 60px 0;
+    margin: 0;
+  }
+  .feature__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+  .feature__item {
+    width: 354px;
+    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 4 * 15) / 2);
+        flex-basis: calc((100% - 4 * 15) / 2);
+  }
+  .title--small {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #212121;
+  }
 }
 
 @media screen and (min-width: 768px) {
