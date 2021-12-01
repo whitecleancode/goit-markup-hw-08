@@ -102,14 +102,6 @@ p {
 .title {
   @extend %title;
 
-  @include mq(notDesktop) {
-    margin-bottom: 30px;
-  }
-
-  @include mq(desktop) {
-    margin-bottom: 50px;
-  }
-
   &--small {
     font-size: getf('S');
     color    : getcl('title');
@@ -155,6 +147,7 @@ p {
   }
 }
 
+
 .block {
   margin-bottom   : 30px;
   display         : flex;
@@ -169,6 +162,10 @@ p {
   background-color: getcl('bg_1');
 }
 
+.team__title.title {
+  display      : block;
+  margin-bottom: 30px;
+}
 
 .team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -267,7 +264,7 @@ p {
   color: getcl('w');
 }
 
-.footer__title--S {
+.footer__title--small {
   font-family   : $mainFont;
   font-size     : getf('S');
   font-weight   : $b;

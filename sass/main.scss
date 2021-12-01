@@ -1,7 +1,8 @@
-@import './utils/variables';
 @import './utils/functions';
 @import './utils/mixin';
+@import './utils/variables';
+@import './utils/placeholder';
 @import './base/common';
 @import './components/indexMobile';
-// @import './components/indexTablet';
-// @import './components/indexDesktop';
+@import './components/indexTablet';
+@import './components/indexDesktop';

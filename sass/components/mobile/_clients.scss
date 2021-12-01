@@ -1,16 +1,25 @@
 @media screen and (max-width: 767px) {
-.clients__container {
-    padding: 60px 0px;
+    .clients__container {
+        padding: 60px 0px;
+    }
+
+    .clients__title {
+        margin-bottom: 30px;
+    }
+
+    .clients__list {
+        margin: -15px;
+    }
+
+    .clients__item {
+        margin: 15px;
+
+        padding: 16px 52px;
+        width  : calc((100% - 4 * 15) / 2);
+    }
 }
-.clients__title {
-    margin-bottom: 30px;
-}
-.clients__list {
-    margin: -15px;
-}
+
 .clients__item {
-    margin: 15px;
-    padding: 16px 52px;
-    width: calc((100% - 4 * 15) / 2) ;
-}
+    border       : 1px solid #000;
+    border-radius: 4px;
 }

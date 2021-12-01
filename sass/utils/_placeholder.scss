@@ -53,6 +53,14 @@
   }
 
   %title {
+      @include mq(notDesktop) {
+          margin-bottom: 30px;
+      }
+
+      @include mq(desktop) {
+          margin-bottom: 50px;
+      }
+
       line-height   : 1.17;
       text-align    : center;
       letter-spacing: $ls;
