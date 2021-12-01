@@ -20,11 +20,12 @@
     text-decoration: none;
     color          : rgba($color: #fff, $alpha: 0.4);
   }
+
+  &__place {
+    color: getcl('w');
+  }
 }
 
-.address__place {
-  color: getcl('w');
-}
 
 .footer__title--small {
   font-family   : $mainFont;
@@ -176,9 +177,7 @@
   .footer__button {
     display       : flex;
     flex-direction: row-reverse;
-
-    margin-top   : 20px;
-    margin-bottom: 60px;
+    margin        : 0px;
   }
 }
 
@@ -299,8 +298,7 @@
   }
 
   .ftr-label {
-    display  : $fx;
-    flex-wrap: nowrap;
+    display: $fx;
   }
 
   .footer__type {
@@ -324,14 +322,14 @@
 
 
 
-  .footer__button {
+  .footer__button.button {
     width : 200px;
     height: 50px;
 
     display         : flex;
     flex-direction  : row-reverse;
     align-items     : center;
-    padding         : 0;
+    padding         : 10px 29px;
     margin          : auto;
     cursor          : pointer;
     font-size       : 16px;
@@ -350,9 +348,10 @@
   .button__icon {
     margin-right: 28px;
     margin-left : 10px;
+    fill        : getcl('w');
 
     &:hover {
-      background-color: violet;
+      fill: violet;
     }
   }
 

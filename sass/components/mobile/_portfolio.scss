@@ -23,11 +23,6 @@
   }
 }
 
-.portfolio__container {
-  padding: 60px 0px;
-  margin : 0;
-}
-
 .works__link {
   text-decoration: none;
 
@@ -102,6 +97,7 @@
   .btnlist {
     display  : flex;
     flex-wrap: wrap;
+    padding  : 0;
   }
 
   .btnlist__button {
@@ -121,10 +117,19 @@
 
 @include mq(tablet-only) {
 
+  .container.portfolio {
+    padding: 0;
+  }
+
+  .portfolio__container {
+    padding: 60px 0px;
+    margin : 0;
+  }
 
   .portfolio__btnlist {
-    display        : flex;
-    justify-content: center;
+    display: $fx;
+    margin : 0px auto;
+    padding: 0px;
   }
 
   .btnlist__item {
@@ -187,13 +192,6 @@
 }
 
 @include mq(desktop) {
-
-
-  .portfolio {
-    padding-top   : 94px;
-    padding-bottom: 94px;
-  }
-
   .btnlist {
     display        : flex;
     justify-content: center;
@@ -216,13 +214,13 @@
     border          : 0px;
     cursor          : pointer;
     padding         : 6px 22px;
-    border-radius   : 4px;
+    border-radius   : $radius;
     font-weight     : 500;
     font-size       : 16px;
     line-height     : 1.71;
     text-align      : center;
     letter-spacing  : 0.03em;
-    color           : var(--title-clor);
+    color           : getcl('title');
     background-color: #f5f4fa;
 
     transition-property       : background-color, color, box-shadow;
@@ -284,13 +282,13 @@
   }
 
   .works__thumb {
-    width        : 370px;
-    font-size    : 18px;
-    line-height  : 2;
-    padding      : 20px 24px;
-    border-bottom: 1px solid #eeeeee;
-    border-left  : 1px solid #eeeeee;
-    border-right : 1px solid #eeeeee;
+    width      : 370px;
+    font-size  : getf('m_S');
+    line-height: 2;
+    padding    : 20px 24px;
+    border     : 1px solid #eeeeee;
+    border-top : none;
+
   }
 
   .works__name {

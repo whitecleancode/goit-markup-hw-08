@@ -110,7 +110,7 @@
 <path d="M9 9a3 3 0 1 0 0-6 3 3 0 1 0 0 6Zm0 1.5c-2.003 0-6 1.005-6 3v.75c0 .412.337.75.75.75h10.5c.412 0 .75-.338.75-.75v-.75c0-1.995-3.998-3-6-3Z" />
 </symbol>
 
-<symbol id="iconsend" fill="#fff" viewBox="0 0 24 24">
+<symbol id="iconsend" viewBox="0 0 24 24">
 <path d="M24 0 0 13.5l7.67 2.84L19.5 5.25l-8.998 12.14.007.002-.009-.002V24l4.301-5.018L20.251 21 24 0Z"/>
 </symbol>
 <symbol width="16" height="15" id="mdwclose">
