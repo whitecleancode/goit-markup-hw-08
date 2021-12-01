@@ -1,11 +1,4 @@
-@media screen and (min-width:1200px) {
-
-
-  .header {
-    background-color: getcl('w');
-    border-bottom   : 1px solid #ececec;
-
-  }
+@include mq(desktop) {
 
   .company-logo {
     @extend %logo;
@@ -77,8 +70,4 @@
     fill        : getcl('txt');
     transition  : fill $cubic;
   }
-
-
-
-
 }

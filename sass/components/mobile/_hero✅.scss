@@ -1,0 +1,11 @@
+@include mq(mobile-only) {
+
+    .hero__container {
+        padding: 118px 0px;
+    }
+
+    .button {
+        @extend %button;
+        margin: 0 auto;
+    }
+}
