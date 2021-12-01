@@ -23,6 +23,11 @@
   }
 }
 
+.container.portfolio {
+  padding: 0;
+  margin : 0;
+}
+
 .works__link {
   text-decoration: none;
 
@@ -33,12 +38,7 @@
   }
 }
 
-.works__thumb {
-  padding   : 20px 24px;
-  border    : 1px solid #eeeeee;
-  border-top: none;
-  z-index   : 1;
-}
+
 
 .works__name {
   margin-bottom : 4px;
@@ -93,7 +93,20 @@
 // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ PORTFOLIO RULES ↓↓↓↓↓↓↓↓↓↓↓↓
 
+img {
+  display   : block;
+  width     : 100%;
+  max-height: auto;
+}
+
 @include mq(mobile-only) {
+
+  .portfolio__container {
+    margin-left : auto;
+    margin-right: auto;
+    padding     : 60px 15px;
+  }
+
   .btnlist {
     display  : flex;
     flex-wrap: wrap;
@@ -107,7 +120,22 @@
 
   .works__item {
     display      : flex;
+    width        : 450px;
+    max-width    : 100%;
     margin-bottom: 30px;
+    margin       : 0 auto;
+
+    &:first-child {
+      margin-top: 15px
+    }
+  }
+
+  .works__thumb {
+    width     : 450px;
+    padding   : 20px 24px;
+    border    : 1px solid #eeeeee;
+    border-top: none;
+    z-index   : 1;
   }
 
   .works__text {
@@ -117,18 +145,14 @@
 
 @include mq(tablet-only) {
 
-  .container.portfolio {
-    padding: 0;
-  }
-
   .portfolio__container {
-    padding: 60px 0px;
+    padding: 60px 15px;
     margin : 0;
   }
 
   .portfolio__btnlist {
     display: $fx;
-    margin : 0px auto;
+    margin : 0px 78px;
     padding: 0px;
   }
 
