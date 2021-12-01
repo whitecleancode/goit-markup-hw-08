@@ -1,7 +1,9 @@
 @include mq(desktop) {
 
-  .company-logo {
-    @extend %logo;
+
+  .header {
+    padding: 0;
+    margin : 0;
   }
 
   .nav {
@@ -56,13 +58,9 @@
     align-items: center;
     margin-left: auto;
 
-    &__mail {
-      @extend %mail;
-    }
+    // &__mail {}
 
-    &__tel {
-      @extend %tel;
-    }
+    // &__tel {}
   }
 
   .contacts__icon {

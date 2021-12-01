@@ -5,7 +5,11 @@
     }
 
     .button {
-        @extend %button;
+        // @extend %button;
         margin: 0 auto;
+    }
+
+    %button {
+        display: block;
     }
 }
