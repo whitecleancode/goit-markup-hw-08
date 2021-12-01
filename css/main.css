@@ -1246,9 +1246,16 @@ input[type='checkbox']:checked + .agreement__checkbox {
     margin-right: 0;
   }
   .team__overlay {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 32px;
     background-color: #fff;
+  }
+  .title--medium {
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    text-align: center;
+    color: #212121;
   }
   .team__text {
     text-align: center;
@@ -1259,17 +1266,15 @@ input[type='checkbox']:checked + .agreement__checkbox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: -5px;
   }
   .social__linkbox {
-    margin: 5px;
-    -ms-flex-preferred-size: calc((100% - 8 * 5) / 4);
-        flex-basis: calc((100% - 8 * 5) / 4);
+    margin-right: 10px;
+  }
+  .social__linkbox:last-child {
+    margin-right: 0;
   }
   .social__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    position: relative;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -1284,7 +1289,12 @@ input[type='checkbox']:checked + .agreement__checkbox {
   .social__link:focus .social__link__icon {
     fill: #fff;
   }
-  .social__link__icon {
+  .social__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     fill: #afb1b8;
     -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

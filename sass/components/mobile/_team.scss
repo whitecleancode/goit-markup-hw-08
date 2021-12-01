@@ -130,11 +130,18 @@
 
 
     .team__overlay {
-        padding-top     : 30px;
-        padding-bottom  : 30px;
+        padding         : 30px 32px;
         background-color: getcl('w');
     }
 
+    .title--medium {
+        font-size     : getf('M');
+        line-height   : 1.17;
+        letter-spacing: $ls;
+        font-weight   : 500;
+        text-align    : center;
+        color         : getcl('title');
+    }
 
     .team__text {
         text-align      : center;
@@ -144,15 +151,17 @@
 
     .social {
         display: $fx;
-        margin : -5px;
 
         &__linkbox {
-            margin    : 5px;
-            flex-basis: calc((100% - 8 * 5) / 4);
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
 
         &__link {
-            display         : $fx;
+            position        : relative;
             width           : 44px;
             height          : 44px;
             border-radius   : 50%;
@@ -170,12 +179,18 @@
                 fill: getcl('w');
             }
 
-            &__icon {
-                fill      : getcl('gr');
-                transition: fill $cubic;
-            }
+
         }
 
 
+    }
+
+    .social__icon {
+        position  : absolute;
+        top       : 50%;
+        left      : 50%;
+        transform : translate(-50%, -50%);
+        fill      : getcl('gr');
+        transition: fill $cubic;
     }
 }
