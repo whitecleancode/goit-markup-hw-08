@@ -6,6 +6,9 @@
 .team__title.title {
     display      : block;
     margin-bottom: 30px;
+    font-size    : getf('L');
+    line-height  : 1.19;
+    text-align   : center;
 }
 
 .team__item {
@@ -16,7 +19,8 @@
 }
 
 .team__overlay {
-    padding-top: 30px;
+    padding         : 30px 32px;
+    background-color: getcl('w');
 
     @include mq(notDesktop) {
         padding-bottom: 24px;
@@ -27,15 +31,25 @@
     }
 }
 
+.title--medium {
+    font-size     : getf('M');
+    line-height   : 1.17;
+    letter-spacing: $ls;
+    font-weight   : 500;
+    text-align    : center;
+    color         : getcl('title');
+}
+
 .team__text {
-    margin-bottom: getf('M');
-    line-height  : 1.17;
+    text-align      : center;
+    background-color: getcl('w');
+    margin-bottom   : getf('M');
 
 }
 
 .social {
-    display: flex;
-    margin : -10px;
+    display        : flex;
+    justify-content: center;
 
     &__icon {
         position  : absolute;
@@ -48,8 +62,11 @@
     }
 
     &__linkbox {
-        margin    : 10px;
-        flex-basis: calc((100% - 4 * 20) / 4);
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     &__link {
@@ -128,14 +145,6 @@
         font-size  : getf('L');
         line-height: 1.19;
         text-align : center;
-
-        &--small {
-            margin-bottom : 10px;
-            font-weight   : 500;
-            font-size     : getf('M');
-            letter-spacing: $ls;
-            color         : getcl('title');
-        }
     }
 
     .team__list {
@@ -153,39 +162,6 @@
 
         &:last-child {
             margin-right: 0;
-        }
-    }
-
-
-    .team__overlay {
-        padding         : 30px 32px;
-        background-color: getcl('w');
-    }
-
-    .title--medium {
-        font-size     : getf('M');
-        line-height   : 1.17;
-        letter-spacing: $ls;
-        font-weight   : 500;
-        text-align    : center;
-        color         : getcl('title');
-    }
-
-    .team__text {
-        text-align      : center;
-        background-color: getcl('w');
-        margin-bottom   : 16px;
-    }
-
-    .social {
-        display: $fx;
-
-        &__linkbox {
-            margin-right: 10px;
-
-            &:last-child {
-                margin-right: 0;
-            }
         }
     }
 }

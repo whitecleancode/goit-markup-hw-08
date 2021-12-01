@@ -9,7 +9,7 @@
         background-color: rgba(0, 0, 0, 0.2);
         opacity         : 1;
         transition      : visibility 250ms $cubic, opacity 250ms $cubic;
-        overflow-y      : scroll;
+        overflow        : scroll;
     }
 
     .backdrop.is-hidden {
@@ -29,6 +29,7 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius   : 4px;
         background-color: getcl('w');
+        overflow        : scroll;
 
         &__close {
             position: absolute;
