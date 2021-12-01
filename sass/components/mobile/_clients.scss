@@ -60,9 +60,6 @@
 }
 
 @include mq(tablet-only) {
-    .clients {
-        padding: 60px 0px;
-    }
 
     .clients__title {
         margin-bottom: 30px;
@@ -87,18 +84,14 @@
 
 @include mq(desktop) {
 
-
-    .clients {
-        padding-top   : 94px;
-        padding-bottom: 94px;
-    }
-
     .clients__list {
         display: flex;
+        margin : -15px;
     }
 
     .clients__item {
-        margin-right: 30px;
+        margin    : 15px;
+        flex-basis: calc((100% - 6 * 30) / 6);
 
         &:last-child {
             margin-right: 0;

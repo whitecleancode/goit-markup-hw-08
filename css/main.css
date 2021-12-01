@@ -1131,9 +1131,6 @@ input[type='checkbox']:checked + .agreement__checkbox {
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
-  .clients {
-    padding: 60px 0px;
-  }
   .clients__title {
     margin-bottom: 30px;
   }
@@ -1155,17 +1152,16 @@ input[type='checkbox']:checked + .agreement__checkbox {
 }
 
 @media (min-width: 1200px) {
-  .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
   .clients__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: -15px;
   }
   .clients__item {
-    margin-right: 30px;
+    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 6 * 30) / 6);
+        flex-basis: calc((100% - 6 * 30) / 6);
   }
   .clients__item:last-child {
     margin-right: 0;
