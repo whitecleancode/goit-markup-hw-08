@@ -1849,7 +1849,13 @@ img {
     margin-bottom: 50px;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 0px;
+  }
+  .portfolio__container {
+    padding: 60px 15px;
+    margin: 0;
+  }
+  .btnlist.portfolio__btnlist {
+    padding: 0px;
   }
   .btnlist__item {
     margin-right: 8px;
