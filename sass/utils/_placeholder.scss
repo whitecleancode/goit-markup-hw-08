@@ -1,0 +1,53 @@
+  %mail {
+      display       : flex;
+      align-items   : center;
+      padding       : 32px 0;
+      margin-right  : 30px;
+      color         : getcl('txt');
+      font-weight   : 500;
+      line-height   : 1.14;
+      letter-spacing: 0.02em;
+
+      transition: color $cubic;
+
+      &:hover,
+      &:focus {
+          color: getcl('acnt');
+      }
+
+      &:hover .contacts__icon,
+      &:focus .contacts__icon {
+          fill: getcl('acnt');
+      }
+  }
+
+  %tel {
+      padding       : 32px 0;
+      margin-right  : 0;
+      font-weight   : 500;
+      line-height   : 1.14;
+      letter-spacing: 0.02em;
+      transition    : color $cubic;
+
+      &:hover,
+      &:focus {
+          color: getcl('acnt');
+      }
+
+      &:hover .contacts__icon,
+      &:focus .contacts__icon {
+          fill: getcl('acnt');
+      }
+  }
+
+  %logo {
+      font-family   : $logoFont, sans-serif;
+      font-weight   : $b;
+      line-height   : 1.2;
+      letter-spacing: $ls;
+      color         : getcl('acnt');
+
+      &--black {
+          color: getcl('b')
+      }
+  }

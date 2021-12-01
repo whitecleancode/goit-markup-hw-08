@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK,EACjC,AAAA,QAAQ,AAAC,CACP,OAAO,CAAE,IAAI,CACb,SAAS,CAAE,IAAI,CAChB,AACD,AAAA,gBAAgB,AAAC,CACf,YAAY,CAAE,GAAG,CACjB,aAAa,CAAE,IAAI,CACpB,AAED,AAAA,YAAY,AAAC,CACX,OAAO,CAAE,IAAI,CACb,aAAa,CAAE,IAAI,CACpB,AAED,AAAA,YAAY,AAAC,CACX,OAAO,CAAE,SAAS,CACnB",
-    "sources": [
-        "../sass/components/mobile/portfolio.scss"
-    ],
-    "names": [],
-    "file": "portfolio.min.css"
-}
