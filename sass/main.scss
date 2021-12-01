@@ -3,6 +3,12 @@
 @import './utils/variables';
 @import './utils/placeholder';
 @import './base/common';
-@import './components/indexMobile';
-@import './components/indexTablet';
-@import './components/indexDesktop';
+@import './components/mobile/header';
+@import './components/mobile/hero';
+@import './base/modal';
+@import './components/mobile/features';
+@import './components/mobile/samples';
+@import './components/mobile/team';
+@import './components/mobile/clients';
+@import './components/mobile/footer';
+@import './components/mobile/portfolio';

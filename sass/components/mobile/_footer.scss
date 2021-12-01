@@ -1,37 +1,383 @@
-@media screen and (max-width: 767px) {
+.footer {
+  background-color: getcl('bg_2');
+}
+
+.footer__container {
+  display        : flex;
+  justify-content: baseline;
+  padding        : 60px 0px;
+}
+
+.company__logo--footer {
+  margin-bottom: 20px;
+}
+
+.address {
+  font-style: normal;
+
+  &__mail,
+  &__tel {
+    text-decoration: none;
+    color          : rgba($color: #fff, $alpha: 0.4);
+  }
+}
+
+.address__place {
+  color: getcl('w');
+}
+
+.footer__title--small {
+  font-family   : $mainFont;
+  font-size     : getf('S');
+  font-weight   : $b;
+  color         : getcl('w');
+  letter-spacing: $ls;
+  text-transform: uppercase;
+}
+
+.footer__type {
+  width           : 450px;
+  height          : 50px;
+  background-color: transparent;
+  border          : 1px solid rgba(255, 255, 255, 0.3);
+  filter          : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius   : $radius;
+}
+
+.footer__list-item {
+  display         : flex;
+  justify-content : center;
+  width           : 44px;
+  height          : 44px;
+  border-radius   : 50%;
+  align-items     : center;
+  background-color: rgba($color: #fff, $alpha: 0.1);
+  transition      : background-color $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: getcl('acnt');
+  }
+}
+
+.footer__icon {
+  fill: getcl('w');
+}
+
+.company__logo--white {
+  color: getcl('w');
+}
+
+// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ FOOTER UTILS ↑↑↑↑↑↑↑↑↑↑↑↑↑
+// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+// –––––––––––––––––––––––––––––––––––––––––––
+// –––––––––––––––––––––––––––––––––––––––––––
+// ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+// ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ FOOTER RULES ↓↓↓↓↓↓↓↓↓↓↓↓
+
+
+@include mq(mobile-only) {
   .footer__container {
     flex-direction: column;
   }
 
   .address {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    align-items: center;
+    align-items   : center;
   }
+
   .address__place {
     margin-bottom: 8px;
   }
+
   .address__mail {
     margin-bottom: 8px;
   }
+
   .address__tel {
     margin-bottom: 60px;
   }
+
   .footer__list {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    margin: -10px;
+    margin         : -5px;
   }
+
   .footer__list-item {
-    margin: 10px;
-    flex-basis: calc((100% - 4 * 10) / 4);
+    margin       : 5px;
+    flex-basis   : calc((100% - 4 * 10) / 4);
     margin-bottom: 60px;
   }
+
   .footer__title--small {
     margin-bottom: 20px;
+    text-align   : center;
   }
 
   .footer__type {
     margin-bottom: 20px;
+  }
+}
+
+@include mq(tablet-only) {
+  .footer__container {
+    display        : flex;
+    justify-content: baseline;
+    flex-wrap      : wrap;
+  }
+
+  .address {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+  }
+
+  .company__logo--footer {
+    margin-right : 0;
+    margin-bottom: 20px;
+  }
+
+  .address__place,
+  .address__mail {
+    margin-bottom: 8px;
+  }
+
+  .title--smallw {
+    color        : getcl('w');
+    text-align   : center;
+    margin-bottom: 20px;
+  }
+
+  .footer__list {
+    display: flex;
+    margin : -5px;
+  }
+
+  .footer__list-item {
+    margin    : 5px;
+    flex-basis: calc((100% - 8 * 5) / 4);
+  }
+
+  .container__left {
+    margin-left : 76px;
+    margin-right: 165px;
+  }
+
+  .container__right {
+    display       : flex;
+    align-items   : center;
+    flex-direction: column;
+    margin        : 0px auto;
+    margin-top    : 60px;
+  }
+
+  .footer__button {
+    display       : flex;
+    flex-direction: row-reverse;
+
+    margin-top   : 20px;
+    margin-bottom: 60px;
+  }
+}
+
+@include mq(desktop) {
+
+
+  .footer {
+    color           : getcl('w');
+    background-color: getcl('bg_2');
+
+  }
+
+  .footer__container {
+    display    : flex;
+    align-items: baseline;
+    padding    : 60px 0px;
+
+  }
+
+  .container__left {
+    display       : flex;
+    flex-direction: column;
+    margin-right  : 70px;
+  }
+
+  .container__mid {
+    display       : flex;
+    flex-direction: column;
+    margin-right  : 93px;
+  }
+
+  .container__right {
+    display       : flex;
+    flex-direction: column;
+  }
+
+  .company__logo {
+    display        : inline-block;
+    font-family    : Raleway, sans-serif;
+    font-weight    : 700;
+    font-size      : 26px;
+    line-height    : 1.2;
+    letter-spacing : 0.03em;
+    color          : getcl('acnt');
+    text-decoration: none;
+
+
+
+    &--white {
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer__title--small.title--smallw {
+    margin-bottom: 20px
+  }
+
+  .title-smallw {
+    margin-bottom : 20px;
+    font-weight   : 700;
+    font-size     : 14px;
+    line-height   : 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color         : #ffffff;
+  }
+
+  .footer__list {
+    display: flex;
+    padding: 0;
+  }
+
+  .footer__list-item {
+    justify-content: center;
+    align-items    : center;
+    margin-right   : 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+
+  .footer__link {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 44px;
+    height          : 44px;
+    border-radius   : 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property       : background-color;
+    transition-duration       : 250ms;
+    transition-timing-function: $cubic;
+
+    &:hover,
+    &:focus {
+      background-color: getcl('acnt');
+    }
+
+    &:hover .footer__icon,
+    &:focus .footer__icon {
+      fill: getcl('w');
+    }
+  }
+
+  .footer__icon {
+    fill                      : getcl('w');
+    transition-property       : fill;
+    transition-duration       : 250ms;
+    transition-timing-function: $cubic;
+  }
+
+  .footer__form {
+    display    : flex;
+    align-items: center;
+  }
+
+  .ftr-label {
+    display  : $fx;
+    flex-wrap: nowrap;
+  }
+
+  .footer__type {
+    cursor          : pointer;
+    width           : 358px;
+    height          : 50px;
+    margin-right    : 12px;
+    padding-left    : 16px;
+    border          : 1px solid rgba(255, 255, 255, 0.3);
+    filter          : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius   : 4px;
+    background-color: transparent;
+    color           : rgba(255, 255, 255, 0.6);
+
+    &::placeholder {
+      padding-top   : 15px;
+      padding-bottom: 15px;
+      letter-spacing: 0.03em;
+    }
+  }
+
+
+
+  .footer__button {
+    width : 200px;
+    height: 50px;
+
+    display         : flex;
+    flex-direction  : row-reverse;
+    align-items     : center;
+    padding         : 0;
+    margin          : auto;
+    cursor          : pointer;
+    font-size       : 16px;
+    line-height     : 1.87;
+    font-weight     : 700;
+    letter-spacing  : 0.06em;
+    text-align      : center;
+    color           : getcl('w');
+    background-color: getcl('acnt');
+    box-shadow      : 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius   : 4px;
+
+
+  }
+
+  .button__icon {
+    margin-right: 28px;
+    margin-left : 10px;
+
+    &:hover {
+      background-color: violet;
+    }
+  }
+
+
+  .address {
+
+    &__place,
+    &__mail,
+    &__tel {
+      font-size      : 14px;
+      font-style     : normal;
+      line-height    : 1.71;
+      letter-spacing : 0.03em;
+      text-decoration: none;
+      padding        : 0px;
+      margin-bottom  : 9px;
+      color          : rgba(255, 255, 255, 0.6);
+    }
+
+    &__place {
+      color: getcl('w');
+    }
+
+    &__tel {
+      margin-bottom: 0;
+    }
   }
 }

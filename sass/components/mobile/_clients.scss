@@ -1,6 +1,46 @@
-@media screen and (max-width: 767px) {
+.clients__list {
+    display  : flex;
+    flex-wrap: wrap;
+}
+
+.clients__item {
+    height       : 92px;
+    border       : $border;
+    border-radius: $radius;
+    transition   : border-color $cubic;
+
+    &:hover,
+    &:focus {
+        border-color: getcl('acnt');
+    }
+
+    &:hover .clients__icon,
+    &:focus .clients__icon {
+        fill: getcl('acnt');
+    }
+}
+
+.clients__icon {
+    fill      : getcl('gr');
+    transition: fill $cubic;
+}
+
+// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ CLIENTS UTILS ↑↑↑↑↑↑↑↑↑↑↑↑↑
+// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+// –––––––––––––––––––––––––––––––––––––––––––
+// –––––––––––––––––––––––––––––––––––––––––––
+// ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+// ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ CLIENTS RULES ↓↓↓↓↓↓↓↓↓↓↓↓
+
+
+@include mq(mobile-only) {
     .clients__container {
         padding: 60px 0px;
+    }
+
+    .clients__item {
+        border       : 1px solid #000;
+        border-radius: 4px;
     }
 
     .clients__title {
@@ -19,7 +59,80 @@
     }
 }
 
-.clients__item {
-    border       : 1px solid #000;
-    border-radius: 4px;
+@include mq(tablet-only) {
+    .clients {
+        padding: 60px 0px;
+    }
+
+    .clients__title {
+        margin-bottom: 30px;
+    }
+
+    .clients__list {
+        display: flex;
+        margin : -15px;
+    }
+
+    .clients__item {
+
+        width     : 226px;
+        margin    : 15px;
+        flex-basis: calc((100% - 6 * 15) / 3);
+    }
+
+    .clients__icon {
+        margin: 16px 60px;
+    }
+}
+
+@include mq(desktop) {
+
+
+    .clients {
+        padding-top   : 94px;
+        padding-bottom: 94px;
+    }
+
+    .clients__list {
+        display: flex;
+    }
+
+    .clients__item {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover,
+        &:focus {
+            border: 1px solid getcl('acnt');
+        }
+    }
+
+    .clients__link {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        width          : 170px;
+        height         : 92px;
+        border         : 1px solid getcl('gr');
+        border-radius  : 4px;
+
+        transition-property       : border;
+        transition-duration       : 250ms;
+        transition-timing-function: $cubic;
+
+        &:hover .clients__icon,
+        &:focus .clients__icon {
+            fill: getcl('acnt');
+        }
+    }
+
+    .clients__icon {
+        fill                      : getcl('gr');
+        transition-property       : fill;
+        transition-duration       : 250ms;
+        transition-timing-function: $cubic;
+    }
 }
