@@ -1,3 +1,58 @@
+.team {
+    background-color: getcl('bg_1');
+}
+
+.team__title.title {
+    display      : block;
+    margin-bottom: 30px;
+}
+
+.team__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius   : 0px 0px 4px 4px;
+    background-color: getcl('w');
+}
+
+.team__overlay {
+    padding-top: 30px;
+
+    @include mq(notDesktop) {
+        padding-bottom: 24px;
+    }
+
+    @include mq(desktop) {
+        padding-bottom: 30px;
+    }
+}
+
+.team__text {
+    margin-bottom: getf('M');
+    line-height  : 1.17;
+
+}
+
+.social {
+    display: flex;
+    margin : -10px;
+
+    &__icon {
+        fill: getcl('gr');
+    }
+
+    &__linkbox {
+        margin    : 10px;
+        flex-basis: calc((100% - 4 * 20) / 4);
+    }
+}
+
+// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ TEAM UTILS ↑↑↑↑↑↑↑↑↑↑↑↑↑
+// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+// –––––––––––––––––––––––––––––––––––––––––––
+// –––––––––––––––––––––––––––––––––––––––––––
+// ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+// ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ TEAM RULES ↓↓↓↓↓↓↓↓↓↓↓↓
+
 @include mq(mobile-only) {
 
     .team__item {
@@ -11,4 +66,138 @@
 
     }
 
+}
+
+@include mq(tablet-only) {
+
+    .team__list {
+        display  : flex;
+        flex-wrap: wrap;
+        margin   : -15px;
+    }
+
+    .team__item {
+        width     : 354px;
+        margin    : 15px;
+        flex-basis: calc((100% - 4 * 15) / 2);
+    }
+
+    .social.team__social {
+        display: flex;
+        margin : -10px;
+    }
+
+    .social__linkbox {
+        padding-bottom: 24px;
+        margin        : 10px;
+        ;
+        flex-basis: calc((100% - 8 * 5) / 4);
+    }
+}
+
+@include mq(desktop) {
+
+
+    .team {
+        background-color: getcl('bg_1');
+        padding-top     : 94px;
+        padding-bottom  : 94px;
+
+    }
+
+    .team__title {
+        font-size  : getf('large');
+        line-height: 1.19;
+        text-align : center;
+
+        &--small {
+            margin-bottom : 10px;
+            font-weight   : 500;
+            font-size     : getf('medium');
+            letter-spacing: $ls;
+            color         : getcl('title');
+        }
+    }
+
+    .team__list {
+        display        : flex;
+        justify-content: center;
+        margin-right   : auto;
+        margin-left    : auto;
+        padding-left   : 0px;
+    }
+
+    .team__item {
+        width       : 270;
+        margin-right: 30px;
+        box-shadow  : 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 6px 6px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+
+    .team__overlay {
+        padding-top     : 30px;
+        padding-bottom  : 30px;
+        background-color: getcl('w');
+    }
+
+
+    .team__text {
+        text-align      : center;
+        background-color: getcl('w');
+        margin-bottom   : 16px;
+    }
+
+    .social {
+        display        : flex;
+        justify-content: center;
+        padding-left   : 0;
+
+    }
+
+    .social__linkbox {
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+
+    .social__link {
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        width           : 44px;
+        height          : 44px;
+        border-radius   : 50%;
+        background-color: getcl('w');
+
+        transition-property       : background-color;
+        transition-duration       : 250ms;
+        transition-timing-function: $cubic;
+
+        &:hover,
+        &:focus {
+            background-color: getcl('acnt');
+        }
+
+        &:hover .social__icon,
+        &:focus .social__icon {
+            fill: getcl('w');
+        }
+    }
+
+
+    .social__icon {
+        fill                      : getcl('gr');
+        transition-property       : fill;
+        transition-duration       : 250ms;
+        transition-timing-function: $cubic;
+    }
 }

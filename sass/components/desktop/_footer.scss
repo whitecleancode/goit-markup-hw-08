@@ -40,11 +40,12 @@
         letter-spacing : 0.03em;
         color          : getcl('acnt');
         text-decoration: none;
-        margin-bottom  : 20px;
-        color          : getcl('w');
 
-        &--black {
-            color: getcl('b');
+
+
+        &--white {
+            margin-bottom: 20px;
+            color        : getcl('w');
         }
     }
 

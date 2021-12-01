@@ -1,9 +1,84 @@
+.header {
+  background-color: getcl('w');
+  border-bottom   : 1px solid #ececec;
+}
+
+.header__container {
+  padding        : 0px;
+  display        : $fx;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.header__button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu {
+  display: none;
+
+  &.is-open {
+    position        : absolute;
+    z-index         : 1;
+    width           : 100vw;
+    height          : 100vh;
+    display         : $fx;
+    flex-direction  : column;
+    justify-content : space-between;
+    box-shadow      : $shadow;
+    padding         : 48px 0;
+    background-color: getcl('w');
+  }
+}
+
+.company__logo {
+  font-family    : $logoFont, sans-serif;
+  font-weight    : $b;
+  line-height    : 1.2;
+  letter-spacing : $ls;
+  text-decoration: none;
+  color          : getcl('acnt');
+  font-size      : getf('l_S');
+
+  &--black {
+    color: getcl('b')
+  }
+
+  @include mq(desktop) {
+    font-size: getf('l_M');
+  }
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  fill        : getcl('txt');
+  transition  : fill $cubic;
+}
+
+.nav,
+.contacts {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    ;
+  }
+}
+
+// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ HEADER UTILS ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+// _____________________________________________
+// 
+// ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+// ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
+
 @include mq(mobile-only) {
-
-
   .header__container {
-    display        : $fx;
-    align-items    : center;
     justify-content: space-between;
     padding-top    : 10px;
     padding-bottom : 10px;
@@ -85,21 +160,154 @@
       }
     }
   }
+}
 
-  .menu {
-    display: none;
+@include mq(tablet) {
 
-    &.is-open {
-      position        : absolute;
-      z-index         : 1;
-      width           : 100vw;
-      height          : 100vh;
-      display         : $fx;
-      flex-direction  : column;
-      justify-content : space-between;
-      box-shadow      : $shadow;
-      padding         : 48px 0;
-      background-color: getcl('w');
+  .nav__item {
+    position    : relative;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  .nav__link {
+    position       : relative;
+    padding        : 32px 0;
+    font-weight    : 500;
+    font-size      : 14px;
+    line-height    : 1.14;
+    letter-spacing : 0.02em;
+    text-decoration: none;
+    color          : getcl('title');
+    transition     : color $cubic;
+
+    &:hover,
+    &:focus {
+      color: getcl('acnt');
+    }
+
+    &--current {
+      color: getcl('acnt');
+
+      &::after {
+        content         : '';
+        position        : absolute;
+        bottom          : 0;
+        display         : block;
+        width           : 100%;
+        height          : 4px;
+        border-radius   : 2px;
+        background-color: getcl('acnt');
+      }
     }
   }
 }
+
+@include mq(tablet-only) {
+
+  .contacts {
+    flex-direction: column;
+    padding       : 21px 0px;
+
+    &__mail {
+      margin-bottom : 10px;
+      color         : getcl('txt');
+      font-weight   : 500;
+      line-height   : 1.14;
+      letter-spacing: 0.02em;
+
+      transition: color $cubic;
+
+      &:hover,
+      &:focus {
+        color: getcl('acnt');
+      }
+
+      &:hover .contacts__icon,
+      &:focus .contacts__icon {
+        fill: getcl('acnt');
+      }
+
+    }
+
+    &__tel {
+      font-weight   : 500;
+      line-height   : 1.14;
+      letter-spacing: 0.02em;
+      color         : getcl('txt');
+      transition    : color $cubic;
+
+      &:hover,
+      &:focus {
+        color: getcl('acnt');
+      }
+
+      &:hover .contacts__icon,
+      &:focus .contacts__icon {
+        fill: getcl('acnt');
+      }
+    }
+  }
+
+}
+
+@include mq(desktop) {
+
+
+  .contacts {
+    display    : flex;
+    align-items: center;
+
+    &__mail {
+      padding       : 32px 0;
+      margin-right  : 30px;
+      color         : getcl('txt');
+      font-weight   : 500;
+      line-height   : 1.14;
+      letter-spacing: 0.02em;
+
+      transition: color $cubic;
+
+      &:hover,
+      &:focus {
+        color: getcl('acnt');
+      }
+
+      &:hover .contacts__icon,
+      &:focus .contacts__icon {
+        fill: getcl('acnt');
+      }
+    }
+
+    &__tel {
+
+      padding       : 32px 0;
+      margin-right  : 0;
+      font-weight   : 500;
+      line-height   : 1.14;
+      letter-spacing: 0.02em;
+      color         : getcl('txt');
+      transition    : color $cubic;
+
+      &:hover,
+      &:focus {
+        color: getcl('acnt');
+      }
+
+      &:hover .contacts__icon,
+      &:focus .contacts__icon {
+        fill: getcl('acnt');
+      }
+    }
+
+  }
+
+
+}
+
+// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ HEADER RULES ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+// _____________________________________________

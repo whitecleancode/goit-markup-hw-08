@@ -1,15 +1,99 @@
+.hero {
+    background-color   : getcl('bg_2');
+    background-image   : linear-gradient(to right, $gradient, $gradient), url(../images/bg.jpg);
+    background-repeat  : no-repeat;
+    background-position: 50% 50%;
+}
+
+.hero__container {
+    padding: 118px 0px;
+}
+
+.hero__title {
+    font-family   : $mainFont, sans-serif;
+    letter-spacing: $ls2;
+    font-weight   : 900;
+    text-align    : center;
+    text-transform: uppercase;
+    margin        : 0px auto 30px auto;
+    color         : getcl('w');
+}
+
+.button {
+    padding         : 10px 32px 10px 32px;
+    border          : none;
+    margin          : 0 auto;
+    align-items     : center;
+    text-align      : center;
+    cursor          : pointer;
+    background-color: getcl('acnt');
+    color           : getcl('w');
+    font-size       : getf('M');
+    font-weight     : $b;
+    line-height     : 1.87;
+    display         : $fx;
+
+    letter-spacing: $ls2;
+    box-shadow    : 0px 4px 4px rgb(0, 0, 0 / 0.15);
+    border-radius : $radius;
+}
+
+// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ HERO UTILS ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+// _____________________________________________
+// 
+// ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+// ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ HERO RULES ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+
 @include mq(mobile-only) {
 
+    .hero {
+        background-size: 480px 400px;
+    }
+
     .hero__container {
-        padding: 118px 0px;
-    }
-
-    .button {
-        // @extend %button;
-        margin: 0 auto;
-    }
-
-    %button {
-        display: block;
+        max-width: 767px;
     }
 }
+
+@include mq(notDesktop) {
+
+    .hero {
+        background-image   : linear-gradient(to right, $gradient, $gradient), url(../images/bg.jpg);
+        background-size    : cover;
+        background-position: 50% 50%;
+    }
+
+    .hero__container {
+        max-width: 1199px;
+    }
+
+    .hero__title {
+        max-width  : 360px;
+        font-size  : getf('t_S');
+        line-height: 1.62;
+    }
+}
+
+@include mq(desktop) {
+
+    .hero {
+        background-image   : linear-gradient(to right, $gradient, $gradient), url(../images/bg.jpg);
+        background-position: 50% 50%;
+    }
+
+    .hero__container {
+        max-width: 1600px;
+        padding  : 200px 0;
+    }
+
+    .hero__title {
+        max-width  : 696px;
+        font-size  : getf('XL');
+        line-height: 1.32;
+    }
+}
+
+// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ HERO RULES ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+// ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+// _____________________________________________
