@@ -985,12 +985,21 @@ input[type='checkbox']:checked + .agreement__checkbox {
 
 .title--small {
   font-weight: 700;
+  font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.17;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   margin-bottom: 10px;
   color: #212121;
+}
+
+.block__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 @media (max-width: 767.98px) {
@@ -1023,39 +1032,23 @@ input[type='checkbox']:checked + .agreement__checkbox {
 }
 
 @media (min-width: 1200px) {
+  .feature__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: -15px;
+  }
+  .feature__item {
+    margin: 15px;
+    -ms-flex-preferred-size: calc((100% - 2 * 8) / 4);
+        flex-basis: calc((100% - 2 * 8) / 4);
+  }
   .block {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 270px;
-    border-radius: 4px;
-    margin-right: 30px;
     margin-bottom: 30px;
     background-color: #f5f4fa;
-  }
-  .block:last-child {
-    margin-right: 0;
-  }
-  .feature__item {
-    margin-right: 30px;
-    width: 270px;
-  }
-  .feature__item:last-child {
-    margin-right: 0px;
-  }
-  .block__title {
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: var(--title-clor);
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-  .block__text {
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
   }
 }
 
@@ -1066,17 +1059,11 @@ input[type='checkbox']:checked + .agreement__checkbox {
 }
 
 @media (min-width: 1200px) {
-  .samples {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
   .samples__items {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0px;
+    margin: 0 auto;
   }
   .samples__item {
     position: relative;
@@ -1087,29 +1074,54 @@ input[type='checkbox']:checked + .agreement__checkbox {
   }
   .samples__text {
     position: absolute;
-    bottom: 0%;
-    padding: 27px 0px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    bottom: 0%;
     margin: 0;
+    padding: 27px 0px;
     font-weight: 700;
-    font-size: 14px;
+    letter-spacing: 0.03em;
     line-height: 1.14;
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--w-clor);
+    font-size: 14px;
+    color: #fff;
     background-color: rgba(47, 48, 58, 0.8);
+  }
+  .samples__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 480px) {
+  .samples__container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 768px) {
+  .samples__container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .samples__container {
+    width: 1200px;
+    padding: 0 15px 94px 15px;
   }
 }
 
 .team {
   background-color: #f5f4fa;
+  padding: 0;
 }
 
 .team__title.title {
@@ -1187,7 +1199,7 @@ input[type='checkbox']:checked + .agreement__checkbox {
     -ms-flex-preferred-size: calc((100% - 4 * 15) / 2);
         flex-basis: calc((100% - 4 * 15) / 2);
   }
-  .social.team__social {
+  .social {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1202,18 +1214,15 @@ input[type='checkbox']:checked + .agreement__checkbox {
 }
 
 @media (min-width: 1200px) {
-  .team {
-    background-color: #f5f4fa;
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
   .team__title {
+    font-size: 36px;
     line-height: 1.19;
     text-align: center;
   }
   .team__title--small {
     margin-bottom: 10px;
     font-weight: 500;
+    font-size: 16px;
     letter-spacing: 0.03em;
     color: #212121;
   }
@@ -1224,9 +1233,7 @@ input[type='checkbox']:checked + .agreement__checkbox {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0px;
+    margin: 0 auto;
   }
   .team__item {
     width: 270;
@@ -1252,53 +1259,35 @@ input[type='checkbox']:checked + .agreement__checkbox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-left: 0;
+    margin: -5px;
   }
   .social__linkbox {
-    margin-right: 10px;
-  }
-  .social__linkbox:last-child {
-    margin-right: 0;
+    margin: 5px;
+    -ms-flex-preferred-size: calc((100% - 8 * 5) / 4);
+        flex-basis: calc((100% - 8 * 5) / 4);
   }
   .social__link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background-color: #fff;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .social__link:hover, .social__link:focus {
     background-color: #2196f3;
   }
-  .social__link:hover .social__icon,
-  .social__link:focus .social__icon {
+  .social__link:hover .social__link__icon,
+  .social__link:focus .social__link__icon {
     fill: #fff;
   }
-  .social__icon {
+  .social__link__icon {
     fill: #afb1b8;
-    -webkit-transition-property: fill;
-    transition-property: fill;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 

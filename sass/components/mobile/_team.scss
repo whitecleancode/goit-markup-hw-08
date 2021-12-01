@@ -1,5 +1,6 @@
 .team {
     background-color: getcl('bg_1');
+    padding         : 0;
 }
 
 .team__title.title {
@@ -82,38 +83,28 @@
         flex-basis: calc((100% - 4 * 15) / 2);
     }
 
-    .social.team__social {
+    .social {
         display: flex;
         margin : -10px;
-    }
 
-    .social__linkbox {
-        padding-bottom: 24px;
-        margin        : 10px;
-        ;
-        flex-basis: calc((100% - 8 * 5) / 4);
+        &__linkbox {
+            padding-bottom: 24px;
+            margin        : 10px;
+            flex-basis    : calc((100% - 8 * 5) / 4);
+        }
     }
 }
 
 @include mq(desktop) {
-
-
-    .team {
-        background-color: getcl('bg_1');
-        padding-top     : 94px;
-        padding-bottom  : 94px;
-
-    }
-
     .team__title {
-        font-size  : getf('large');
+        font-size  : getf('L');
         line-height: 1.19;
         text-align : center;
 
         &--small {
             margin-bottom : 10px;
             font-weight   : 500;
-            font-size     : getf('medium');
+            font-size     : getf('M');
             letter-spacing: $ls;
             color         : getcl('title');
         }
@@ -122,9 +113,7 @@
     .team__list {
         display        : flex;
         justify-content: center;
-        margin-right   : auto;
-        margin-left    : auto;
-        padding-left   : 0px;
+        margin         : 0 auto;
     }
 
     .team__item {
@@ -154,50 +143,39 @@
     }
 
     .social {
-        display        : flex;
-        justify-content: center;
-        padding-left   : 0;
+        display: $fx;
+        margin : -5px;
 
-    }
-
-    .social__linkbox {
-        margin-right: 10px;
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-
-
-    .social__link {
-        display         : flex;
-        align-items     : center;
-        justify-content : center;
-        width           : 44px;
-        height          : 44px;
-        border-radius   : 50%;
-        background-color: getcl('w');
-
-        transition-property       : background-color;
-        transition-duration       : 250ms;
-        transition-timing-function: $cubic;
-
-        &:hover,
-        &:focus {
-            background-color: getcl('acnt');
+        &__linkbox {
+            margin    : 5px;
+            flex-basis: calc((100% - 8 * 5) / 4);
         }
 
-        &:hover .social__icon,
-        &:focus .social__icon {
-            fill: getcl('w');
+        &__link {
+            display         : $fx;
+            width           : 44px;
+            height          : 44px;
+            border-radius   : 50%;
+            background-color: getcl('w');
+
+            transition: background-color $cubic;
+
+            &:hover,
+            &:focus {
+                background-color: getcl('acnt');
+            }
+
+            &:hover &__icon,
+            &:focus &__icon {
+                fill: getcl('w');
+            }
+
+            &__icon {
+                fill      : getcl('gr');
+                transition: fill $cubic;
+            }
         }
-    }
 
 
-    .social__icon {
-        fill                      : getcl('gr');
-        transition-property       : fill;
-        transition-duration       : 250ms;
-        transition-timing-function: $cubic;
     }
 }
